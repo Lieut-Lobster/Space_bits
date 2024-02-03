@@ -6,7 +6,7 @@
 
 [sub_resource type="Curve2D" id="Curve2D_anor5"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1280, 0, 0, 0, 0, 0, 1280, 720, 0, 0, 0, 0, 0, 720, 0, 0, 0, 0, 0, 0)
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 960, 0, 0, 0, 0, 0, 960, 952, 0, 0, 0, 0, 0, 952, 0, 0, 0, 0, 0, 0)
 }
 point_count = 5
 
@@ -30,6 +30,7 @@ one_shot = true
 position = Vector2(640, 560)
 
 [node name="MobPath" type="Path2D" parent="."]
+scale = Vector2(0.8, 1.0084)
 curve = SubResource("Curve2D_anor5")
 
 [node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath"]
