@@ -48,10 +48,10 @@ metadata/_edit_group_ = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(1, 0)
-scale = Vector2(7, 7)
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_7jjrs")
 animation = &"Boss_Idle"
-frame_progress = 0.0735454
+frame_progress = 0.647541
 speed_scale = 0.85
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
