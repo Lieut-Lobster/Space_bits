@@ -1,0 +1,139 @@
+[gd_scene load_steps=14 format=3 uid="uid://gkao2styqi2a"]
+
+[ext_resource type="Script" path="res://Space_bits/Player/player_movement.gd" id="1_n1twu"]
+[ext_resource type="Texture2D" uid="uid://bi217ucislav" path="res://Space_bits/Sprites/Player/Directional_Visualization/Player_ship_direct_02.png" id="2_iafp5"]
+[ext_resource type="Texture2D" uid="uid://cnfrfqqoi3bg6" path="res://Space_bits/Sprites/Player/Directional_Visualization/Player_ship_diag_03.png" id="4_rea0t"]
+[ext_resource type="Texture2D" uid="uid://cx02xosxuco11" path="res://Space_bits/Sprites/Player/Directional_Visualization/Player_ship_diag_02.png" id="5_s4d7r"]
+[ext_resource type="Texture2D" uid="uid://csiftcykmb8t7" path="res://Space_bits/Sprites/Player/Directional_Visualization/Player_ship_direct_03.png" id="6_lvdg7"]
+[ext_resource type="Texture2D" uid="uid://cl8fb3nk2eakw" path="res://Space_bits/Sprites/Player/Directional_Visualization/Player_ship_direct_01.png" id="7_eugm2"]
+[ext_resource type="Texture2D" uid="uid://f5lkxhewptxf" path="res://Space_bits/Sprites/Player/Directional_Visualization/Player_ship_direct_04.png" id="8_sshlr"]
+[ext_resource type="Texture2D" uid="uid://bbqlreiyeabxa" path="res://Space_bits/Sprites/Player/Directional_Visualization/Player_ship_diag_04.png" id="9_5mv5r"]
+[ext_resource type="Texture2D" uid="uid://bsugnl2m00vim" path="res://Space_bits/Sprites/Player/Directional_Visualization/Player_ship_diag_01.png" id="10_miir0"]
+[ext_resource type="Texture2D" uid="uid://c33gyukmeufam" path="res://Space_bits/Sprites/Player/Base_State/Player_ship_0001.png" id="11_1ge4q"]
+[ext_resource type="Texture2D" uid="uid://brhe3te0skpmu" path="res://Space_bits/Sprites/Player/Base_State/Player_ship_0002.png" id="12_41q2l"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_68klb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_iafp5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1ge4q")
+}],
+"loop": true,
+"name": &"Move_down",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_rea0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1ge4q")
+}],
+"loop": true,
+"name": &"Move_down_L",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_s4d7r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1ge4q")
+}],
+"loop": true,
+"name": &"Move_down_R",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_lvdg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1ge4q")
+}],
+"loop": true,
+"name": &"Move_left",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_eugm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1ge4q")
+}],
+"loop": true,
+"name": &"Move_right",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_sshlr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1ge4q")
+}],
+"loop": true,
+"name": &"Move_up",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_5mv5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1ge4q")
+}],
+"loop": true,
+"name": &"Move_up_L",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_miir0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1ge4q")
+}],
+"loop": true,
+"name": &"Move_up_R",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_1ge4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_41q2l")
+}],
+"loop": true,
+"name": &"Standard_visuals",
+"speed": 6.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nnxef"]
+radius = 10.3387
+
+[node name="Player" type="Area2D"]
+position = Vector2(-149, 228)
+script = ExtResource("1_n1twu")
+speed = 400
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_68klb")
+animation = &"Standard_visuals"
+frame_progress = 0.726996
+speed_scale = 0.65
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(3, 3)
+shape = SubResource("CircleShape2D_nnxef")
+one_way_collision_margin = 0.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
