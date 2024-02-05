@@ -1,41 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bn2672jrv2o1i"]
+[gd_scene load_steps=3 format=3 uid="uid://binw5b23h3ogx"]
 
-[ext_resource type="Script" path="res://Space_bits/Main.gd" id="1_gmy4e"]
-[ext_resource type="PackedScene" uid="uid://cbavyi1vug6ig" path="res://Space_bits/Scenes/mob.tscn" id="2_4unfx"]
-[ext_resource type="PackedScene" uid="uid://gkao2styqi2a" path="res://Space_bits/Scenes/Player.tscn" id="3_trxyf"]
-
-[sub_resource type="Curve2D" id="Curve2D_anor5"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 960, 0, 0, 0, 0, 0, 960, 952, 0, 0, 0, 0, 0, 952, 0, 0, 0, 0, 0, 0)
-}
-point_count = 5
+[ext_resource type="PackedScene" uid="uid://b0dppw5ylpdcv" path="res://Space_bits/Scenes/Mechanics/GridSpawn.tscn" id="1_b863v"]
+[ext_resource type="PackedScene" uid="uid://gkao2styqi2a" path="res://Space_bits/Scenes/Player/Player.tscn" id="3_trxyf"]
 
 [node name="Main" type="Node"]
-script = ExtResource("1_gmy4e")
-mob_scene = ExtResource("2_4unfx")
+
+[node name="GridSpawn" parent="." instance=ExtResource("1_b863v")]
 
 [node name="Player" parent="." instance=ExtResource("3_trxyf")]
-position = Vector2(-186, 236)
-
-[node name="MobTimer" type="Timer" parent="."]
-wait_time = 0.5
-
-[node name="ScoreTimer" type="Timer" parent="."]
-
-[node name="StartTimer" type="Timer" parent="."]
-wait_time = 2.0
-one_shot = true
-
-[node name="StartPosition" type="Marker2D" parent="."]
-position = Vector2(640, 560)
-
-[node name="MobPath" type="Path2D" parent="."]
-scale = Vector2(0.8, 1.0084)
-curve = SubResource("Curve2D_anor5")
-
-[node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath"]
-
-[connection signal="hit" from="Player" to="Player" method="game_over"]
-[connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
-[connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
-[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
