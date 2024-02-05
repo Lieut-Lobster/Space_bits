@@ -1,0 +1,148 @@
+[gd_scene load_steps=28 format=3 uid="uid://3xlxb28ek608"]
+
+[ext_resource type="Script" path="res://Space_bits/Enemies/Mobs/Enemy_Rammer.gd" id="1_utiys"]
+[ext_resource type="Texture2D" uid="uid://yffigcd465n8" path="res://Space_bits/Sprites/Enemies/Enemy_2/idle/Enemy2_idle_0001.png" id="2_h3rch"]
+[ext_resource type="Texture2D" uid="uid://ctjt7l70t7q4" path="res://Space_bits/Sprites/Enemies/Enemy_2/Attack_Player/End_Attack/Enemy2_0026.png" id="2_wkmrs"]
+[ext_resource type="Texture2D" uid="uid://cio7ghc26k251" path="res://Space_bits/Sprites/Enemies/Enemy_2/Attack_Player/End_Attack/Enemy2_0027.png" id="3_1vgmv"]
+[ext_resource type="Texture2D" uid="uid://prr052k42qh6" path="res://Space_bits/Sprites/Enemies/Enemy_2/idle/Enemy2_idle_0002.png" id="3_kyfj0"]
+[ext_resource type="Texture2D" uid="uid://b4kfuohsndgpj" path="res://Space_bits/Sprites/Enemies/Enemy_2/Move_Off_Grid/Enemy2_0006.png" id="4_0sms4"]
+[ext_resource type="Texture2D" uid="uid://bysur4qa1p004" path="res://Space_bits/Sprites/Enemies/Enemy_2/idle/Enemy2_idle_0003.png" id="4_xgj1b"]
+[ext_resource type="Texture2D" uid="uid://b3uji7jk0d7we" path="res://Space_bits/Sprites/Enemies/Enemy_2/idle/Enemy2_idle_0004.png" id="5_a71wc"]
+[ext_resource type="Texture2D" uid="uid://b08jxlibhrqtk" path="res://Space_bits/Sprites/Enemies/Enemy_2/Move_Off_Grid/Enemy2_0007.png" id="5_vca1y"]
+[ext_resource type="Texture2D" uid="uid://d2adp3ssm6wj7" path="res://Space_bits/Sprites/Enemies/Enemy_2/Move_Off_Grid/Enemy2_0008.png" id="6_1ba0b"]
+[ext_resource type="Texture2D" uid="uid://t64lgf2hdxpj" path="res://Space_bits/Sprites/Enemies/Enemy_2/Move_Off_Grid/Enemy2_0009.png" id="7_rrk6w"]
+[ext_resource type="Texture2D" uid="uid://drd72yl4ceo7a" path="res://Space_bits/Sprites/Enemies/Enemy_2/Move_Off_Grid/Enemy2_0010.png" id="8_mgc4y"]
+[ext_resource type="Texture2D" uid="uid://cv3ncld5gw3s8" path="res://Space_bits/Sprites/Enemies/Enemy_2/Move_Off_Grid/Enemy2_0011.png" id="9_ji15e"]
+[ext_resource type="Texture2D" uid="uid://e6jt2hylhooq" path="res://Space_bits/Sprites/Enemies/Enemy_2/Move_Off_Grid/Enemy2_0012.png" id="10_rjtb8"]
+[ext_resource type="Texture2D" uid="uid://c0lowl3g33nxn" path="res://Space_bits/Sprites/Enemies/Enemy_2/Move_Off_Grid/Enemy2_0013.png" id="11_qolum"]
+[ext_resource type="Texture2D" uid="uid://dv7u3blbjvmco" path="res://Space_bits/Sprites/Enemies/Enemy_2/Move_Off_Grid/Enemy2_0014.png" id="12_4iqap"]
+[ext_resource type="Texture2D" uid="uid://b4ejspmp4m8i0" path="res://Space_bits/Sprites/Enemies/Enemy_2/Move_Off_Grid/Enemy2_0015.png" id="13_q7c8n"]
+[ext_resource type="Texture2D" uid="uid://unw242bs1778" path="res://Space_bits/Sprites/Enemies/Enemy_2/Move_Off_Grid/Enemy2_0016.png" id="14_1v212"]
+[ext_resource type="Texture2D" uid="uid://bypf55jneuxq" path="res://Space_bits/Sprites/Enemies/Enemy_2/Move_Off_Grid/Enemy2_0017.png" id="15_56ih4"]
+[ext_resource type="Texture2D" uid="uid://dv6kfrd4yjx1m" path="res://Space_bits/Sprites/Enemies/Enemy_2/Move_Off_Grid/Enemy2_0018.png" id="16_cdqw1"]
+[ext_resource type="Texture2D" uid="uid://sf1cjasb8yu3" path="res://Space_bits/Sprites/Enemies/Enemy_2/Move_Off_Grid/Enemy2_0019.png" id="17_am3cx"]
+[ext_resource type="Texture2D" uid="uid://cb7rwpu26mnlv" path="res://Space_bits/Sprites/Enemies/Enemy_2/Attack_Player/Start_Attack/Enemy2_0021.png" id="18_mb5h6"]
+[ext_resource type="Texture2D" uid="uid://bg78c1do4o8a" path="res://Space_bits/Sprites/Enemies/Enemy_2/Attack_Player/Start_Attack/Enemy2_0022.png" id="19_nukel"]
+[ext_resource type="Texture2D" uid="uid://buojqls8dm5cv" path="res://Space_bits/Sprites/Enemies/Enemy_2/Attack_Player/Start_Attack/Enemy2_0023.png" id="20_k4k7h"]
+[ext_resource type="Texture2D" uid="uid://bqqt8xw0scf6a" path="res://Space_bits/Sprites/Enemies/Enemy_2/Attack_Player/Start_Attack/Enemy2_0024.png" id="21_8bqw1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0gb63"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_wkmrs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1vgmv")
+}],
+"loop": true,
+"name": &"End_Attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_0sms4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vca1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_1ba0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rrk6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_mgc4y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ji15e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_rjtb8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qolum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_4iqap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_q7c8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1v212")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_56ih4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_cdqw1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_am3cx")
+}],
+"loop": true,
+"name": &"Moving_Off_Grid",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_mb5h6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_nukel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_k4k7h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8bqw1")
+}],
+"loop": true,
+"name": &"Start_Attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_h3rch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_kyfj0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xgj1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_a71wc")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5h8d4"]
+radius = 21.0
+height = 58.0
+
+[node name="Enemy_Rammer" type="RigidBody2D"]
+position = Vector2(64, 56)
+gravity_scale = 0.0
+script = ExtResource("1_utiys")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_0gb63")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_5h8d4")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(7.6294e-07, 11)
+scale = Vector2(2.8, 1.7)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

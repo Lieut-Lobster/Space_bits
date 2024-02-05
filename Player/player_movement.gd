@@ -7,8 +7,8 @@ var screen_size
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	screen_size = get_viewport_rect().size
-	position = Vector2(0, 0)
-	hide()
+	position = Vector2(300, 900)
+	#hide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
