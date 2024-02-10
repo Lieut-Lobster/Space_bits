@@ -1,6 +1,7 @@
 extends Node
 
 var player_pos
+var player_hp
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -8,3 +9,6 @@ func _ready():
 
 func player_position(in_player_pos):
 	player_pos = in_player_pos
+
+func player_health(in_player_hp):
+	player_hp = in_player_hp

@@ -1,7 +1,7 @@
 extends RigidBody2D
 
 @onready var attackTimer := $AttackPlayerTimer
-var nextSpawnTime := 0.1
+var nextSpawnTime := 0.2
 @onready var stallToAttackTimer := $StallThenAttackTimer
 var stallTime := randi_range(1,2)
 @onready var destroyEnemyObject := $BlowUpThenDestroyEnemy

@@ -204,7 +204,7 @@ script = ExtResource("1_utiys")
 texture_filter = 1
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_0gb63")
-animation = &"On_Death"
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_5icsf")
@@ -220,9 +220,6 @@ one_shot = true
 
 [node name="BlowUpThenDestroyEnemy" type="Timer" parent="."]
 one_shot = true
-
-[node name="Enemy_face" type="Marker2D" parent="."]
-position = Vector2(0, 24)
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
 [connection signal="timeout" from="AttackPlayerTimer" to="." method="_on_attack_player_timer_timeout"]

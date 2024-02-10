@@ -49,6 +49,7 @@ func _on_spawn_timer_timeout():
 		enemy.position = Vector2(spawn_grid[0][0], spawn_grid[0][1])
 		spawn_grid.pop_front()
 		get_tree().current_scene.add_child(enemy)
+		enemy = lerp(enemy.position.x, 32.0, 1)
 	# Restart the timer
 	spawnTimer.start(nextSpawnTime)
 

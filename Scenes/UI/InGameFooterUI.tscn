@@ -1,0 +1,84 @@
+[gd_scene load_steps=10 format=3 uid="uid://dsari2olnouyo"]
+
+[ext_resource type="Texture2D" uid="uid://yg3kqijhfuwm" path="res://Space_bits/Sprites/Player/Stats/Shield/Player_Shield_Outline.png" id="1_2v7xk"]
+[ext_resource type="Texture2D" uid="uid://cws3pd1w7m1qu" path="res://Space_bits/Sprites/Player/Stats/Shield/Player_Shield_Body_0002.png" id="2_0yhq2"]
+[ext_resource type="Texture2D" uid="uid://cyqispaekdaf7" path="res://Space_bits/Sprites/Player/Stats/Shield/Player_Shield_Body_0001.png" id="3_v8nn4"]
+[ext_resource type="Texture2D" uid="uid://do21myuyf88xm" path="res://Space_bits/Sprites/Player/Stats/Health/Player_HP_Outline.png" id="4_tqtdw"]
+[ext_resource type="Texture2D" uid="uid://c8ljbv65u61jb" path="res://Space_bits/Sprites/Player/Stats/Health/Player_HP_Body_0002.png" id="5_72g7k"]
+[ext_resource type="Texture2D" uid="uid://n4n1ivk1ib41" path="res://Space_bits/Sprites/Player/Stats/Health/Player_HP_Body_0001.png" id="6_v53oa"]
+[ext_resource type="Texture2D" uid="uid://yiv3u5rjsdj1" path="res://Space_bits/Sprites/Player/Stats/Stamina/Player_Stamina_Outline.png" id="7_8m0fi"]
+[ext_resource type="Texture2D" uid="uid://dij3vqn4tc1cx" path="res://Space_bits/Sprites/Player/Stats/Stamina/Player_Stamina_Body_0002.png" id="8_2cjni"]
+[ext_resource type="Texture2D" uid="uid://2tpvu787c6vr" path="res://Space_bits/Sprites/Player/Stats/Stamina/Player_Stamina_Body_0001.png" id="9_2dbno"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="PlayerStatBars" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = 833.0
+offset_right = 78.0
+offset_bottom = 885.0
+grow_vertical = 0
+scale = Vector2(3.33, 3.33)
+size_flags_horizontal = 0
+size_flags_vertical = 4
+metadata/_edit_group_ = true
+
+[node name="Shield2DSprite" type="Sprite2D" parent="PlayerStatBars"]
+texture_filter = 1
+position = Vector2(0, 19.8198)
+scale = Vector2(1, 0.956156)
+texture = ExtResource("1_2v7xk")
+centered = false
+metadata/_edit_group_ = true
+
+[node name="ShieldProgressBar" type="TextureProgressBar" parent="PlayerStatBars/Shield2DSprite"]
+anchors_preset = -1
+anchor_left = -0.027
+anchor_right = -0.027
+offset_left = 2.3082
+offset_top = 1.25629
+offset_right = 41.3082
+offset_bottom = 4.25629
+value = 70.0
+texture_under = ExtResource("2_0yhq2")
+texture_progress = ExtResource("3_v8nn4")
+
+[node name="Health2DSprite" type="Sprite2D" parent="PlayerStatBars"]
+texture_filter = 1
+position = Vector2(0, 23.7237)
+scale = Vector2(1, 0.956156)
+texture = ExtResource("4_tqtdw")
+centered = false
+metadata/_edit_group_ = true
+
+[node name="HealthProgressBar" type="TextureProgressBar" parent="PlayerStatBars/Health2DSprite"]
+texture_filter = 1
+offset_left = 0.900902
+offset_top = 0.628141
+offset_right = 39.9009
+offset_bottom = 8.62814
+value = 70.0
+texture_under = ExtResource("5_72g7k")
+texture_progress = ExtResource("6_v53oa")
+
+[node name="Stamina2DSprite" type="Sprite2D" parent="PlayerStatBars"]
+texture_filter = 1
+position = Vector2(-5.1051, 15.6156)
+scale = Vector2(0.900901, 0.900901)
+texture = ExtResource("7_8m0fi")
+centered = false
+metadata/_edit_group_ = true
+
+[node name="StaminaProgressBar" type="TextureProgressBar" parent="PlayerStatBars/Stamina2DSprite"]
+offset_left = 0.666664
+offset_top = 1.0
+offset_right = 13.6667
+offset_bottom = 19.0
+value = 60.0
+fill_mode = 3
+texture_under = ExtResource("8_2cjni")
+texture_progress = ExtResource("9_2dbno")
