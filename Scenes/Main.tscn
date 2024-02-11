@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://binw5b23h3ogx"]
+[gd_scene load_steps=5 format=3 uid="uid://binw5b23h3ogx"]
 
+[ext_resource type="PackedScene" uid="uid://bm6qd68hwp1jk" path="res://Space_bits/Scenes/Background/BG.tscn" id="1_270la"]
 [ext_resource type="PackedScene" uid="uid://b0dppw5ylpdcv" path="res://Space_bits/Scenes/Mechanics/GridSpawn.tscn" id="1_b863v"]
-[ext_resource type="Script" path="res://Space_bits/Scenes/Level1.gd" id="3_t4doi"]
+[ext_resource type="Script" path="res://Space_bits/Level1.gd" id="3_t4doi"]
 [ext_resource type="PackedScene" uid="uid://gkao2styqi2a" path="res://Space_bits/Scenes/Player/Player.tscn" id="3_trxyf"]
 
 [node name="Main" type="Node"]
+
+[node name="Node2D" parent="." instance=ExtResource("1_270la")]
 
 [node name="GridSpawn" parent="." instance=ExtResource("1_b863v")]
 

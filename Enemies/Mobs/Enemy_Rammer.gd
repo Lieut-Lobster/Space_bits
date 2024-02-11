@@ -42,7 +42,7 @@ func _ready():
 	# Rotate number assoicated here is as very close to 90 degrees in radians
 	rotate(1.5707963268)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _physics_process(delta):
 	# print(Global.player_pos)
 	change_attack_animation()
 	if attacking == true:
@@ -58,8 +58,7 @@ func _process(delta):
 			animation_index = 5
 			if is_blowing_up == true:
 				is_blowing_up = false
-				print("Freeing Queue after ", destroyEnemyTime, " Second(s):")
-				destroyEnemyObject.start(destroyEnemyTime)
+				suicide()
 			#print(player_rammed)
 		
 		
@@ -78,6 +77,7 @@ func _on_visible_on_screen_notifier_2d_screen_exited():
 
 
 func change_attack_animation():
+	
 	if roundi(position.y) >= random_position_engage_attack + 50 && attacking == true:
 		# Change animation to be ending cycle of attack (End_Attack)
 		animation_index = 4
@@ -111,3 +111,25 @@ func _on_stall_then_attack_timer_timeout():
 
 func _on_blow_up_then_destroy_enemy_timeout():
 	queue_free()
+
+
+func _on_player_collision_body_entered(body):
+	if body.name == "Player":
+		Game.playerHP -= 1 
+		print(Game.playerHP)
+
+func suicide():
+	print("Freeing Queue after ", destroyEnemyTime, " Second(s):")
+	destroyEnemyObject.start(destroyEnemyTime)
+	
+func killed():
+	print("I JUST GOT KILLED!")
+	destroyEnemyObject.start(0.2)
+	animation_index = 5
+	$AnimatedSprite2D.play(animation_array[animation_index])
+	#queue_free()
+	
+func _on_laser_collision_area_entered(area):
+	if area.is_in_group("lasers"):
+		killed()
+		area.queue_free()

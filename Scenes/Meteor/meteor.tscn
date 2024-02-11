@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwrrhkxqamlkm"]
+
+[ext_resource type="Script" path="res://Space_bits/Scenes/Meteor/meteor.gd" id="1_ba05g"]
+[ext_resource type="Texture2D" uid="uid://b6us6cnktf6il" path="res://Space_bits/Sprites/Sprite_Samples/Background/meteorBig.png" id="1_ikf3o"]
+
+[node name="Meteor" type="Area2D"]
+script = ExtResource("1_ba05g")
+
+[node name="MeteorBig" type="Sprite2D" parent="."]
+texture = ExtResource("1_ikf3o")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+polygon = PackedVector2Array(-40, -40, -64, -8, -66, -5, -54, 28, -21, 28, 16, 56, 68, 33, 61, -16, 14, -55, -43, -42, -66, -6)
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(4.5, 0.5)
+scale = Vector2(9.05, 5.55)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

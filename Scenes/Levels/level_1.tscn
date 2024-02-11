@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmrfrbv2r35bw"]
+
+[ext_resource type="PackedScene" uid="uid://gkao2styqi2a" path="res://Space_bits/Scenes/Player/Player.tscn" id="1_qwqdh"]
+[ext_resource type="PackedScene" uid="uid://bm6qd68hwp1jk" path="res://Space_bits/Scenes/Background/BG.tscn" id="2_mkvr0"]
+[ext_resource type="PackedScene" uid="uid://b0dppw5ylpdcv" path="res://Space_bits/Scenes/Mechanics/GridSpawn.tscn" id="3_n2wun"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="BG" parent="." instance=ExtResource("2_mkvr0")]
+
+[node name="Player" parent="." instance=ExtResource("1_qwqdh")]
+
+[node name="GridSpawn" parent="." instance=ExtResource("3_n2wun")]

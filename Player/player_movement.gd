@@ -1,17 +1,31 @@
-extends Area2D 
+extends CharacterBody2D
 signal hit
+
+#For lasers
+@onready var LaserCooldown := $LaserCooldown
+@export var newLaserTime := 0.3
 
 @export var speed = 200
 var screen_size
-
+const laserPath = preload('res://Space_bits/Player/Laser.tscn')
+var alreadyShot = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	screen_size = get_viewport_rect().size
-	position = Vector2(352, 800)
+	position = Vector2(384, 800)
 	#hide()
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if Input.is_action_pressed("ui_accept") and LaserCooldown.is_stopped():
+		LaserCooldown.start(newLaserTime)
+		shoot()
+		#if alreadyShot == false:
+			#alreadyShot = true
+			#shoot()
+			#LaserCooldown.start(newLaserTime)
+		
 	var velocity = Vector2.ZERO
 	Global.player_position(position)
 	# Note: Game development is a little weird for the Y axis, Positive Y == Down && Negative Y == Up
@@ -51,3 +65,14 @@ func start(pos):
 	position = pos
 	show()
 	$CollisionShape2D.disabled = false
+
+func shoot():
+	print("Shoot!")
+	var laser = laserPath.instantiate()
+	laser.add_to_group("lasers")
+	get_parent().add_child(laser)
+	laser.position = $Marker2D.global_position
+	
+
+#func _on_laser_cooldown_timeout():
+	#alreadyShot = false

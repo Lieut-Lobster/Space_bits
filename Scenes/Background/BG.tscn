@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://bm6qd68hwp1jk"]
+
+[ext_resource type="Texture2D" uid="uid://del500p1310c4" path="res://Space_bits/Sprites/Sprite_Samples/Background/backgroundColor.png" id="1_18w05"]
+[ext_resource type="Texture2D" uid="uid://co4whrq7qbeqs" path="res://Space_bits/Sprites/Sprite_Samples/Background/starBig.png" id="2_ukbbr"]
+[ext_resource type="PackedScene" uid="uid://dwrrhkxqamlkm" path="res://Space_bits/Scenes/Meteor/meteor.tscn" id="3_bf4s0"]
+
+[node name="BG" type="Node2D"]
+
+[node name="BackgroundColor" type="Sprite2D" parent="."]
+position = Vector2(384, 480)
+scale = Vector2(5.12, 6.4)
+texture = ExtResource("1_18w05")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="BackgroundColor"]
+position = Vector2(-7.62939e-06, -75)
+amount = 50
+lifetime = 4.0
+local_coords = true
+texture = ExtResource("2_ukbbr")
+emission_shape = 3
+emission_rect_extents = Vector2(80, 1)
+direction = Vector2(0, 1)
+spread = 0.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 40.0
+initial_velocity_max = 55.0
+angle_min = 25.0
+angle_max = 70.0
+scale_amount_min = 0.1
+scale_amount_max = 0.25
+
+[node name="Meteor" parent="." instance=ExtResource("3_bf4s0")]
+position = Vector2(568, 64)
+minSpeed = 50.0
+maxSpeed = 200.0

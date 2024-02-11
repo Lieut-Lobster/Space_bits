@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://3xlxb28ek608"]
+[gd_scene load_steps=45 format=3 uid="uid://3xlxb28ek608"]
 
 [ext_resource type="Script" path="res://Space_bits/Enemies/Mobs/Enemy_Rammer.gd" id="1_utiys"]
 [ext_resource type="Texture2D" uid="uid://bjtdgss44hn6w" path="res://Space_bits/Sprites/Enemies/Enemy_2/Attack_Player/End_Attack/enemy_rammer_0032.png" id="2_sgk6b"]
@@ -195,6 +195,14 @@ animations = [{
 radius = 16.0
 height = 58.0
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_545xo"]
+radius = 16.0
+height = 48.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vaarg"]
+radius = 16.0
+height = 64.0
+
 [node name="Enemy_Rammer" type="RigidBody2D"]
 collision_mask = 0
 gravity_scale = 0.0
@@ -221,7 +229,20 @@ one_shot = true
 [node name="BlowUpThenDestroyEnemy" type="Timer" parent="."]
 one_shot = true
 
+[node name="PlayerCollision" type="Area2D" parent="."]
+
+[node name="PlayerAOE" type="CollisionShape2D" parent="PlayerCollision"]
+shape = SubResource("CapsuleShape2D_545xo")
+
+[node name="LaserCollision" type="Area2D" parent="."]
+
+[node name="LaerAOE" type="CollisionShape2D" parent="LaserCollision"]
+shape = SubResource("CapsuleShape2D_vaarg")
+
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
 [connection signal="timeout" from="AttackPlayerTimer" to="." method="_on_attack_player_timer_timeout"]
 [connection signal="timeout" from="StallThenAttackTimer" to="." method="_on_stall_then_attack_timer_timeout"]
 [connection signal="timeout" from="BlowUpThenDestroyEnemy" to="." method="_on_blow_up_then_destroy_enemy_timeout"]
+[connection signal="body_entered" from="PlayerCollision" to="." method="_on_player_collision_body_entered"]
+[connection signal="area_entered" from="LaserCollision" to="." method="_on_laser_collision_area_entered"]
+[connection signal="body_entered" from="LaserCollision" to="." method="_on_laser_collision_body_entered"]
