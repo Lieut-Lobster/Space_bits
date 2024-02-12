@@ -1,6 +1,6 @@
 [gd_scene load_steps=45 format=3 uid="uid://3xlxb28ek608"]
 
-[ext_resource type="Script" path="res://Space_bits/Scripts/Enemies/Mobs/Enemy_Rammer.gd" id="1_8hlbe"]
+[ext_resource type="Script" path="res://Space_bits/Enemies/Mobs/Enemy_Rammer.gd" id="1_utiys"]
 [ext_resource type="Texture2D" uid="uid://bjtdgss44hn6w" path="res://Space_bits/Sprites/Enemies/Enemy_2/Attack_Player/End_Attack/enemy_rammer_0032.png" id="2_sgk6b"]
 [ext_resource type="Texture2D" uid="uid://te6yglpkyk63" path="res://Space_bits/Sprites/Enemies/Enemy_2/Attack_Player/End_Attack/enemy_rammer_0033.png" id="3_2pffn"]
 [ext_resource type="Texture2D" uid="uid://d166n5bb7jlpf" path="res://Space_bits/Sprites/Enemies/Enemy_2/Move_Off_Grid/Move_Off_Grid_Charged/enemy_rammer_0022.png" id="4_qqbc8"]
@@ -206,7 +206,7 @@ height = 64.0
 [node name="Enemy_Rammer" type="RigidBody2D"]
 collision_mask = 0
 gravity_scale = 0.0
-script = ExtResource("1_8hlbe")
+script = ExtResource("1_utiys")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

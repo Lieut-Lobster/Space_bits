@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://gkao2styqi2a"]
 
-[ext_resource type="Script" path="res://Space_bits/Scripts/Player/player_mechanics.gd" id="1_tvxog"]
+[ext_resource type="Script" path="res://Space_bits/Player/player_movement.gd" id="1_n1twu"]
 [ext_resource type="Texture2D" uid="uid://bi217ucislav" path="res://Space_bits/Sprites/Player/Directional_Visualization/Player_ship_direct_02.png" id="2_iafp5"]
 [ext_resource type="Texture2D" uid="uid://cnfrfqqoi3bg6" path="res://Space_bits/Sprites/Player/Directional_Visualization/Player_ship_diag_03.png" id="4_rea0t"]
 [ext_resource type="Texture2D" uid="uid://cx02xosxuco11" path="res://Space_bits/Sprites/Player/Directional_Visualization/Player_ship_diag_02.png" id="5_s4d7r"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bbqlreiyeabxa" path="res://Space_bits/Sprites/Player/Directional_Visualization/Player_ship_diag_04.png" id="9_5mv5r"]
 [ext_resource type="Texture2D" uid="uid://bsugnl2m00vim" path="res://Space_bits/Sprites/Player/Directional_Visualization/Player_ship_diag_01.png" id="10_miir0"]
 [ext_resource type="Texture2D" uid="uid://c33gyukmeufam" path="res://Space_bits/Sprites/Player/Base_State/Player_ship_0001.png" id="11_1ge4q"]
+[ext_resource type="Script" path="res://Space_bits/player_stats.gd" id="12_5ustn"]
 [ext_resource type="Texture2D" uid="uid://brhe3te0skpmu" path="res://Space_bits/Sprites/Player/Base_State/Player_ship_0002.png" id="12_41q2l"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_68klb"]
@@ -118,22 +119,8 @@ animations = [{
 radius = 5.33333
 height = 10.6667
 
-[sub_resource type="GDScript" id="GDScript_sjnef"]
-script/source = "extends CollisionShape2D
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-"
-
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_tvxog")
+script = ExtResource("1_n1twu")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -148,7 +135,7 @@ speed_scale = 0.65
 scale = Vector2(3, 3)
 shape = SubResource("CapsuleShape2D_o0omp")
 one_way_collision_margin = 0.0
-script = SubResource("GDScript_sjnef")
+script = ExtResource("12_5ustn")
 
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(0, -35)
@@ -157,7 +144,4 @@ position = Vector2(0, -35)
 wait_time = 0.275
 one_shot = true
 
-[node name="StaminaRegenTimer" type="Timer" parent="."]
-
 [connection signal="timeout" from="LaserCooldown" to="." method="_on_laser_cooldown_timeout"]
-[connection signal="timeout" from="StaminaRegenTimer" to="." method="_on_stamina_regen_timer_timeout"]
