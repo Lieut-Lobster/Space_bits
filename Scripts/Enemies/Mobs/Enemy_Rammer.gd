@@ -1,13 +1,16 @@
 extends RigidBody2D
 
 @onready var attackTimer := $AttackPlayerTimer
-var nextSpawnTime := 0.2
+var nextSpawnTime := 2
 @onready var stallToAttackTimer := $StallThenAttackTimer
 var stallTime := randi_range(1,2)
 @onready var destroyEnemyObject := $BlowUpThenDestroyEnemy
 var destroyEnemyTime := 1
 
+var is_dead := false
 var is_blowing_up := false
+
+var enemy_damage := 5
 
 @onready var velocity = Vector2.ZERO
 
@@ -39,37 +42,38 @@ var animation_array := [
 func _ready():
 	$AnimatedSprite2D.play(animation_array[animation_index])
 	attackTimer.start(nextSpawnTime)
-	# Rotate number assoicated here is as very close to 90 degrees in radians
+	# Rotate number assoicated here is very close to 90 degrees in radians
 	rotate(1.5707963268)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	# print(Global.player_pos)
-	change_attack_animation()
-	if attacking == true:
-		if is_targeting_player == true:
-			is_targeting_player = false
-			stallToAttackTimer.start(stallTime)
+	if is_dead == false:
+		change_attack_animation()
+		if attacking == true:
+			if is_targeting_player == true:
+				is_targeting_player = false
+				stallToAttackTimer.start(stallTime)
+			
+			if (
+				(position.x <= get_player_pos_x + 20 && position.x >= get_player_pos_x - 20) &&
+				(position.y <= get_player_pos_y + 20 && position.y >= get_player_pos_y - 20) &&
+				player_rammed == true
+			):
+				animation_index = 5
+				if is_blowing_up == true:
+					is_blowing_up = false
+					suicide()
+				#print(player_rammed)
+			
+			
+			# Fix look_at() later, gotta be slower to turn to the player
+			look_at(Player.player_pos)
+			move_and_collide(Vector2(get_player_pos_x - position.x, get_player_pos_y - position.y) * (delta * velocity_change))
+			
+		elif moving == true:
+			move_and_collide(Vector2(0,64) * (delta * velocity_change))
 		
-		if (
-			(position.x <= get_player_pos_x + 20 && position.x >= get_player_pos_x - 20) &&
-			(position.y <= get_player_pos_y + 20 && position.y >= get_player_pos_y - 20) &&
-			player_rammed == true
-		):
-			animation_index = 5
-			if is_blowing_up == true:
-				is_blowing_up = false
-				suicide()
-			#print(player_rammed)
-		
-		
-		# Fix look_at() later, gotta be slower to turn to the player
-		look_at(Global.player_pos)
-		move_and_collide(Vector2(get_player_pos_x - position.x, get_player_pos_y - position.y) * (delta * velocity_change))
-		
-	elif moving == true:
-		move_and_collide(Vector2(0,64) * (delta * velocity_change))
-	
-	$AnimatedSprite2D.play(animation_array[animation_index])
+		$AnimatedSprite2D.play(animation_array[animation_index])
 
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
@@ -104,8 +108,8 @@ func _on_attack_player_timer_timeout():
 func _on_stall_then_attack_timer_timeout():
 	# After being stalled, increase velocity of Enemy
 	velocity_change = 3
-	get_player_pos_x = Global.player_pos.x
-	get_player_pos_y = Global.player_pos.y
+	get_player_pos_x = Player.player_pos.x
+	get_player_pos_y = Player.player_pos.y
 	player_rammed = true
 	is_blowing_up = true
 
@@ -115,8 +119,8 @@ func _on_blow_up_then_destroy_enemy_timeout():
 
 func _on_player_collision_body_entered(body):
 	if body.name == "Player":
-		Game.playerHP -= 1 
-		print(Game.playerHP)
+		Player.player_take_damage(enemy_damage)
+		print(Player.player_shield)
 
 func suicide():
 	print("Freeing Queue after ", destroyEnemyTime, " Second(s):")
@@ -124,9 +128,12 @@ func suicide():
 	
 func killed():
 	print("I JUST GOT KILLED!")
-	destroyEnemyObject.start(0.2)
+	is_dead = true
+	$LaserCollision.queue_free()
+	$PlayerCollision.queue_free()
 	animation_index = 5
 	$AnimatedSprite2D.play(animation_array[animation_index])
+	destroyEnemyObject.start(1)
 	#queue_free()
 	
 func _on_laser_collision_area_entered(area):
