@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bbqlreiyeabxa" path="res://Space_bits/Sprites/Player/Directional_Visualization/Player_ship_diag_04.png" id="9_5mv5r"]
 [ext_resource type="Texture2D" uid="uid://bsugnl2m00vim" path="res://Space_bits/Sprites/Player/Directional_Visualization/Player_ship_diag_01.png" id="10_miir0"]
 [ext_resource type="Texture2D" uid="uid://c33gyukmeufam" path="res://Space_bits/Sprites/Player/Base_State/Player_ship_0001.png" id="11_1ge4q"]
-[ext_resource type="Script" path="res://player_stats.gd" id="12_5ustn"]
+[ext_resource type="Script" path="res://Space_bits/player_stats.gd" id="12_5ustn"]
 [ext_resource type="Texture2D" uid="uid://brhe3te0skpmu" path="res://Space_bits/Sprites/Player/Base_State/Player_ship_0002.png" id="12_41q2l"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_68klb"]

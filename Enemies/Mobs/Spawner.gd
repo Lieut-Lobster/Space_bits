@@ -13,10 +13,10 @@ var nextSpawnTime := 0.001
 var tile_size_gl := 64
 var tile_size_midpoint_gl := 32
 
+
 # NOTE: The grid of the projected play area is 150 chunks in total (64px, 64px) based.
 # Grid sizing for the Enemies to spawn on (64px x 10 wide && 64px x 6 deep)
-var enemy_grid_size_x_gl := 10
-var enemy_grid_size_y_gl := 6
+
 # Grid sizing for the World (64px x 10 wide && 64px x 15 deep)
 var world_grid_size_x_gl := 10
 var world_grid_size_y_gl := 15
@@ -25,17 +25,35 @@ var spawn_grid := []
 var world_grid := []
 var events_grid := []
 
+#Create level variable to be used for the adjust_spawn function
+var level_name := "Level1"
+
+func adjust_spawn_logic_based_on_level(level_name: String):
+	match level_name:
+		"Level1":
+			var enemy_grid_size_x_gl := 10
+			var enemy_grid_size_y_gl := 2
+			spawn_grid = create_grid(tile_size_gl, tile_size_midpoint_gl, enemy_grid_size_x_gl, enemy_grid_size_y_gl)
+		"Level2":
+			var enemy_grid_size_x_gl := 10
+			var enemy_grid_size_y_gl := 6
+		_:
+			# Default case if level name doesn't match
+			print("Unknown level: " + level_name)
+
 # _ready() calls before the frame of the game is being loaded.
 func _ready():
 	randomize()
 	# print("Enemy Grid Array:")
-	spawn_grid = create_grid(tile_size_gl, tile_size_midpoint_gl, enemy_grid_size_x_gl, enemy_grid_size_y_gl)
+	#Call function to adjust the spawn grid size for the level
+	adjust_spawn_logic_based_on_level(level_name)
 	# print("World Grid Array:")
 	world_grid = create_grid(tile_size_gl, tile_size_midpoint_gl, world_grid_size_x_gl, world_grid_size_y_gl)
 	# print("Events Grid Array:")
 	events_grid = create_events_grid(world_grid, spawn_grid)
 	spawnTimer.start(nextSpawnTime)
-
+	
+	
 func _process(delta):
 	pass
 	#print(Global.player_pos)

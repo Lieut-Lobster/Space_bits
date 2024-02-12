@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bm6qd68hwp1jk"]
+[gd_scene load_steps=4 format=3 uid="uid://bl8rv6mpkwqiw"]
 
 [ext_resource type="Texture2D" uid="uid://del500p1310c4" path="res://Space_bits/Sprites/Sprite_Samples/Background/backgroundColor.png" id="1_18w05"]
 [ext_resource type="Texture2D" uid="uid://co4whrq7qbeqs" path="res://Space_bits/Sprites/Sprite_Samples/Background/starBig.png" id="2_ukbbr"]
-[ext_resource type="PackedScene" uid="uid://dwrrhkxqamlkm" path="res://Space_bits/Scenes/Meteor/meteor.tscn" id="3_bf4s0"]
+[ext_resource type="PackedScene" uid="uid://qun4dgq0dvar" path="res://Space_bits/Scenes/Meteor/meteor.tscn" id="3_bf4s0"]
 
 [node name="BG" type="Node2D"]
 

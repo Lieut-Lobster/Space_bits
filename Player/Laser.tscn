@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bqhd4n0pvnrxv"]
+[gd_scene load_steps=4 format=3 uid="uid://dhr4blhn3b7ef"]
 
 [ext_resource type="Texture2D" uid="uid://b7wed8xijc4rk" path="res://Space_bits/Sprites/Player/Sample/SAMPLE_Player_Laser.png" id="1_3ntvh"]
 [ext_resource type="Script" path="res://Space_bits/Player/Laser.gd" id="1_ase3a"]

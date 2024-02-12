@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwrrhkxqamlkm"]
+[gd_scene load_steps=3 format=3 uid="uid://qun4dgq0dvar"]
 
 [ext_resource type="Script" path="res://Space_bits/Scenes/Meteor/meteor.gd" id="1_ba05g"]
 [ext_resource type="Texture2D" uid="uid://b6us6cnktf6il" path="res://Space_bits/Sprites/Sprite_Samples/Background/meteorBig.png" id="1_ikf3o"]
