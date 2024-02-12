@@ -27,7 +27,7 @@ func _process(delta):
 	if Input.is_action_pressed("ui_accept") and LaserCooldown.is_stopped():
 		LaserCooldown.start(new_laser_time)
 		shoot()
-		
+	
 	var velocity = Vector2.ZERO
 	Player.player_position(position)
 	# Note: Game development is a little weird for the Y axis, Positive Y == Down && Negative Y == Up
