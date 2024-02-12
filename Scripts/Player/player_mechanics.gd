@@ -5,8 +5,6 @@ signal hit
 @onready var LaserCooldown := $LaserCooldown
 @export var new_laser_time := 0.3
 const laserPath = preload('res://Space_bits/Scenes/Player/Laser.tscn')
-var alreadyShot = false
-
 
 # Every <stamina_regen_time> seconds, regen <stamina_regen_rate> until 100 stamina
 # Example: It will take with current settings, 5 seconds to reach full stamina 
@@ -14,7 +12,7 @@ var alreadyShot = false
 @export var stamina_regen_time := 0.1
 @export var stamina_regen_rate := 2
 
-@export var speed = 200
+@export var player_speed = 200
 @onready var screen_size_x = get_viewport_rect().size.x
 
 # Called when the node enters the scene tree for the first time.
@@ -27,12 +25,8 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if Input.is_action_pressed("ui_accept") and LaserCooldown.is_stopped():
-		#LaserCooldown.start(new_laser_time)
+		LaserCooldown.start(new_laser_time)
 		shoot()
-		#if alreadyShot == false:
-			#alreadyShot = true
-			#shoot()
-			#LaserCooldown.start(newLaserTime)
 		
 	var velocity = Vector2.ZERO
 	Player.player_position(position)
@@ -54,7 +48,7 @@ func _process(delta):
 		$AnimatedSprite2D.animation = "Move_up" 
 	
 	if velocity.length() > 0:
-		velocity = velocity.normalized() * speed
+		velocity = velocity.normalized() * player_speed
 		$AnimatedSprite2D.play()
 	else:
 		$AnimatedSprite2D.play()
@@ -80,10 +74,6 @@ func shoot():
 	laser.add_to_group("lasers")
 	get_parent().add_child(laser)
 	laser.position = $Marker2D.global_position
-	
-
-#func _on_laser_cooldown_timeout():
-	#alreadyShot = false
 
 func _on_stamina_regen_timer_timeout():
 	Player.player_stamina_regen(stamina_regen_rate)
