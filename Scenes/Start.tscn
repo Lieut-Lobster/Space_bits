@@ -10,16 +10,16 @@ script = ExtResource("1_bsoqu")
 [node name="Node2D" parent="." instance=ExtResource("2_gqy3j")]
 
 [node name="Play" type="Button" parent="."]
-offset_left = 256.0
+offset_left = 224.0
 offset_top = 224.0
-offset_right = 512.0
+offset_right = 480.0
 offset_bottom = 336.0
 text = "Play"
 
 [node name="Quit" type="Button" parent="."]
-offset_left = 256.0
+offset_left = 224.0
 offset_top = 512.0
-offset_right = 512.0
+offset_right = 480.0
 offset_bottom = 624.0
 text = "Quit"
 

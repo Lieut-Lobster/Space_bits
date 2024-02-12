@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://ddhv5hc7iehcc"]
+[gd_scene load_steps=5 format=3 uid="uid://ddhv5hc7iehcc"]
 
 [ext_resource type="PackedScene" uid="uid://gkao2styqi2a" path="res://Space_bits/Scenes/Player/Player.tscn" id="1_qwqdh"]
 [ext_resource type="PackedScene" uid="uid://bl8rv6mpkwqiw" path="res://Space_bits/Scenes/Background/BG.tscn" id="2_mkvr0"]
 [ext_resource type="PackedScene" uid="uid://b0dppw5ylpdcv" path="res://Space_bits/Scenes/Mechanics/GridSpawn.tscn" id="3_n2wun"]
+[ext_resource type="PackedScene" uid="uid://dsari2olnouyo" path="res://Space_bits/Scenes/UI/InGameFooterUI.tscn" id="4_h8buc"]
 
 [node name="Level1" type="Node2D"]
 
@@ -11,3 +12,5 @@
 [node name="Player" parent="." instance=ExtResource("1_qwqdh")]
 
 [node name="GridSpawn" parent="." instance=ExtResource("3_n2wun")]
+
+[node name="FooterUI" parent="." instance=ExtResource("4_h8buc")]
