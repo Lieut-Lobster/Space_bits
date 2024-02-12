@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b0dppw5ylpdcv"]
 
-[ext_resource type="Script" path="res://Space_bits/Enemies/Mobs/Spawner.gd" id="2_0aok7"]
+[ext_resource type="Script" path="res://Space_bits/Scripts/Enemies/Mobs/Spawner.gd" id="2_0aok7"]
 
 [node name="GridSpawn" type="Node2D"]
 metadata/_edit_group_ = true
