@@ -207,6 +207,7 @@ height = 64.0
 collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource("1_8hlbe")
+metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

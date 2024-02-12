@@ -27,7 +27,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if Input.is_action_pressed("ui_accept") and LaserCooldown.is_stopped():
-		LaserCooldown.start(new_laser_time)
+		#LaserCooldown.start(new_laser_time)
 		shoot()
 		#if alreadyShot == false:
 			#alreadyShot = true
