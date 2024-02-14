@@ -18,9 +18,6 @@ var is_targeting_player := true
 var get_player_pos_x := 0.0
 var get_player_pos_y := 0.0
 
-var start_position_x = position.x
-var start_position_y = position.y
-
 var rand_attack_counter := randi_range(10, 60)
 var moving := false
 var attacking := false
@@ -44,6 +41,7 @@ func _ready():
 	attackTimer.start(nextSpawnTime)
 	# Rotate number assoicated here is very close to 90 degrees in radians
 	rotate(1.5707963268)
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	# print(Global.player_pos)

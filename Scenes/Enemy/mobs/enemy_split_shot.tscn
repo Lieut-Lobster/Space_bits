@@ -1,0 +1,166 @@
+[gd_scene load_steps=32 format=3 uid="uid://dc2ktddv4quk2"]
+
+[ext_resource type="Script" path="res://Space_bits/Scripts/Enemies/Mobs/enemy_split_shot.gd" id="1_8wx36"]
+[ext_resource type="Texture2D" uid="uid://cas03vgnxfje1" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0027.png" id="1_xry3k"]
+[ext_resource type="Texture2D" uid="uid://dxudgyahyk3qe" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0028.png" id="2_jhv6p"]
+[ext_resource type="Texture2D" uid="uid://3hk6sqxdniyp" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0029.png" id="3_aaddi"]
+[ext_resource type="Texture2D" uid="uid://csasmgke40847" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0030.png" id="4_xg3tr"]
+[ext_resource type="Texture2D" uid="uid://dqsonl3b7s631" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0006.png" id="5_0ndqy"]
+[ext_resource type="Texture2D" uid="uid://go6u5kmq0ikk" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0007.png" id="6_b7ds1"]
+[ext_resource type="Texture2D" uid="uid://dyprg12n52k0x" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0008.png" id="7_ladjq"]
+[ext_resource type="Texture2D" uid="uid://dlj1hf8io33ya" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0009.png" id="8_ck66s"]
+[ext_resource type="Texture2D" uid="uid://bdg7b4e7yfa6n" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0010.png" id="9_frgsv"]
+[ext_resource type="Texture2D" uid="uid://bc2j6aur5uy54" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0011.png" id="10_gtkk2"]
+[ext_resource type="Texture2D" uid="uid://dpcllqe5mtngy" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0012.png" id="11_xh2gj"]
+[ext_resource type="Texture2D" uid="uid://cymbg16cutiap" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0013.png" id="12_fh56g"]
+[ext_resource type="Texture2D" uid="uid://cgmy1rn32dv2a" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0014.png" id="13_a72ro"]
+[ext_resource type="Texture2D" uid="uid://caahkgp4x6mli" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0015.png" id="14_86ecl"]
+[ext_resource type="Texture2D" uid="uid://bxi5gdkwqutvc" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0016.png" id="15_qdqoj"]
+[ext_resource type="Texture2D" uid="uid://tbb3p4wdw5tt" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0017.png" id="16_coaem"]
+[ext_resource type="Texture2D" uid="uid://bf4e7oyg12esb" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0018.png" id="17_blynb"]
+[ext_resource type="Texture2D" uid="uid://bfq2cpvh2ftp4" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0019.png" id="18_jdqt4"]
+[ext_resource type="Texture2D" uid="uid://b3jd7p7mcldml" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0020.png" id="19_671wy"]
+[ext_resource type="Texture2D" uid="uid://b3bap8n7w78gv" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0021.png" id="20_ett00"]
+[ext_resource type="Texture2D" uid="uid://byte1lfeogxyq" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0022.png" id="21_gm4up"]
+[ext_resource type="Texture2D" uid="uid://chb0o4qye3try" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0023.png" id="22_etrdy"]
+[ext_resource type="Texture2D" uid="uid://d2hcg0jjlxjlq" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0024.png" id="23_j5503"]
+[ext_resource type="Texture2D" uid="uid://clnyi8s3gtve7" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0025.png" id="24_ivqlk"]
+[ext_resource type="Texture2D" uid="uid://dbf4pb44d8p7h" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0001.png" id="25_aqaxy"]
+[ext_resource type="Texture2D" uid="uid://dt31mapbd5rq1" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0002.png" id="26_b2ce2"]
+[ext_resource type="Texture2D" uid="uid://71iu53khvpvg" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0003.png" id="27_tjcr8"]
+[ext_resource type="Texture2D" uid="uid://dqolau7uxvmpu" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_0004.png" id="28_e3jp8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pnjvi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_xry3k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jhv6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_aaddi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xg3tr")
+}],
+"loop": true,
+"name": &"Attack_Notifier",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_0ndqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_b7ds1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ladjq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ck66s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_frgsv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_gtkk2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_xh2gj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_fh56g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_a72ro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_86ecl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_qdqoj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_coaem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_blynb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_jdqt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_671wy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ett00")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_gm4up")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_etrdy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_j5503")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ivqlk")
+}],
+"loop": false,
+"name": &"Charge_Attack",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_aqaxy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_b2ce2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_tjcr8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_e3jp8")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 2.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g87p6"]
+radius = 11.0
+height = 60.0
+
+[node name="Enemy_SplitShot" type="RigidBody2D"]
+position = Vector2(-30, 32)
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource("1_8wx36")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_pnjvi")
+animation = &"Charge_Attack"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_g87p6")
+
+[node name="StalledUntilAttackTimer" type="Timer" parent="."]
+
+[node name="PlayerAttackCollision" type="Area2D" parent="."]
+metadata/_edit_group_ = true
+
+[node name="PlayerAttackAOE" type="CollisionPolygon2D" parent="PlayerAttackCollision"]
+polygon = PackedVector2Array(30, 1, 29, 1, 29, 3, 28, 3, 28, 4, 27, 4, 27, 5, 25, 5, 25, 6, 23, 6, 23, 7, 21, 7, 21, 8, 19, 8, 19, 9, 18, 9, 18, 10, 12, 10, 12, 11, 6, 11, 6, 12, 3, 12, 3, 12, 3, 13, 2, 13, 2, 14, 1, 14, 1, 15, 1, 16, 2, 17, 3, 18, 6, 19, 6, 20, 9, 20, 9, 24, 8, 24, 8, 26, 6, 26, 6, 27, 3, 27, 3, 28, 0, 28, 0, 29, -8, 29, -8, 28, -11, 28, -11, 27, -12, 27, -12, 26, -14, 26, -14, 25, -15, 25, -15, 24, -16, 24, -16, 23, -17, 23, -17, 22, -18, 22, -18, 21, -19, 21, -19, 20, -20, 20, -20, 18, -21, 18, -21, 17, -22, 17, -22, 16, -22, 7, -22, -9, -22, -18, -22, -19, -21, -20, -20, -20, -20, -22, -19, -22, -19, -23, -18, -23, -18, -24, -17, -24, -17, -25, -16, -25, -16, -26, -15, -26, -15, -27, -14, -27, -14, -28, -12, -28, -12, -29, -11, -29, -11, -30, -8, -30, -8, -31, 0, -31, 0, -30, 3, -30, 3, -29, 6, -29, 6, -28, 8, -28, 8, -26, 9, -26, 9, -22, 6, -22, 6, -21, 3, -21, 3, -20, 2, -20, 2, -19, 1, -19, 1, -18, 0, -18, 0, -17, 1, -17, 1, -16, 2, -16, 2, -15, 3, -15, 3, -14, 6, -14, 6, -13, 12, -13, 12, -12, 18, -12, 18, -11, 19, -11, 19, -10, 21, -10, 21, -9, 23, -9, 23, -8, 25, -8, 25, -7, 27, -7, 27, -6, 28, -6, 28, -5, 29, -5, 29, -3, 30, -3)
+one_way_collision_margin = 2.0
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="timeout" from="StalledUntilAttackTimer" to="." method="_on_stalled_until_attack_timeout"]
