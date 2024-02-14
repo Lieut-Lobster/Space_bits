@@ -24,7 +24,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input.is_action_pressed("ui_accept") and LaserCooldown.is_stopped():
+	if Input.is_action_pressed("space_bar") and LaserCooldown.is_stopped():
 		LaserCooldown.start(new_laser_time)
 		shoot()
 	
@@ -34,15 +34,25 @@ func _process(delta):
 	# This is for displaying the animation changes
 	if velocity.x == 0 && velocity.y == 0:
 		$AnimatedSprite2D.animation = "Standard_visuals"
+	
+	if Input.is_action_just_pressed("shift"):
+		if Player.player_stamina == 100:
+			# This currently does nothing except makes the animation restart
+			# Will need some type of functionality for this which no idea what yet.
+			Player.player_stamina = 0
+	
 	if Input.is_action_pressed("move_right"):
 		velocity.x += 1
 		$AnimatedSprite2D.animation = "Move_right"
+	
 	elif Input.is_action_pressed("move_left"):
 		velocity.x -= 1
 		$AnimatedSprite2D.animation = "Move_left"
+	
 	elif Input.is_action_pressed("move_down"):
 		velocity.y += 1
 		$AnimatedSprite2D.animation = "Move_down"
+	
 	elif Input.is_action_pressed("move_up"):
 		velocity.y -= 1
 		$AnimatedSprite2D.animation = "Move_up" 
