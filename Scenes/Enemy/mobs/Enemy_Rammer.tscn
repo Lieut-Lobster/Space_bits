@@ -203,7 +203,8 @@ height = 48.0
 radius = 16.0
 height = 64.0
 
-[node name="Enemy_Rammer" type="RigidBody2D"]
+[node name="Enemy_Rammer" type="RigidBody2D" groups=["Enemy"]]
+position = Vector2(64, 64)
 collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource("1_8hlbe")
