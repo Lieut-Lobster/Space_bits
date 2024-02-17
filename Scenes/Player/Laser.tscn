@@ -10,12 +10,12 @@ height = 14.0
 [node name="Laser" type="Area2D"]
 script = ExtResource("1_4jsqa")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_la0vh")
-
 [node name="SamplePlayerLaser" type="Sprite2D" parent="."]
 scale = Vector2(4, 4)
 texture = ExtResource("2_gqeod")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_la0vh")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 position = Vector2(0, -5.96046e-08)

@@ -65,7 +65,8 @@ func _physics_process(delta):
 			
 			
 			# Fix look_at() later, gotta be slower to turn to the player
-			look_at(Player.player_pos)
+			if Player.player_pos != null:
+				look_at(Player.player_pos)
 			move_and_collide(Vector2(get_player_pos_x - position.x, get_player_pos_y - position.y) * (delta * velocity_change))
 			
 		elif moving == true:

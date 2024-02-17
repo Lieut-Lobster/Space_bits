@@ -1,0 +1,238 @@
+[gd_scene load_steps=43 format=3 uid="uid://dc2ktddv4quk2"]
+
+[ext_resource type="Script" path="res://Space_bits/Scripts/Enemies/Mobs/enemy_split_shot.gd" id="1_0gstp"]
+[ext_resource type="Texture2D" uid="uid://drisgoh3dfqad" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Body/Enemy_3_Body_0006.png" id="2_rrkpp"]
+[ext_resource type="Texture2D" uid="uid://cea8n6r34is5f" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Body/Enemy_3_Body_0001.png" id="3_pdlw7"]
+[ext_resource type="Texture2D" uid="uid://byyh3egkuc7so" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Body/Enemy_3_Body_0002.png" id="4_dl7xu"]
+[ext_resource type="Texture2D" uid="uid://deltx0e4ki018" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Body/Enemy_3_Body_0003.png" id="5_1txfy"]
+[ext_resource type="Texture2D" uid="uid://lvvfitrndfk7" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Body/Enemy_3_Body_0004.png" id="6_7d2t8"]
+[ext_resource type="Texture2D" uid="uid://dochleiqj8nck" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0006.png" id="7_ls114"]
+[ext_resource type="Texture2D" uid="uid://clvkpmraun2qt" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0007.png" id="8_kt4nx"]
+[ext_resource type="Texture2D" uid="uid://ds5pj4qxuakxc" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0008.png" id="9_c8kt2"]
+[ext_resource type="Texture2D" uid="uid://cgdmibqsmgsdl" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0009.png" id="10_tfy3v"]
+[ext_resource type="Texture2D" uid="uid://br0qn8xi4sl6d" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0010.png" id="11_gy0ay"]
+[ext_resource type="Texture2D" uid="uid://j2thua6ysi4n" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0011.png" id="12_q1e8b"]
+[ext_resource type="Texture2D" uid="uid://c1lti38qcj751" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0012.png" id="13_oqlln"]
+[ext_resource type="Texture2D" uid="uid://cxsnm6tptt40s" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0013.png" id="14_vkcd7"]
+[ext_resource type="Texture2D" uid="uid://bdxhwxwexb2cl" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0014.png" id="15_y1lsv"]
+[ext_resource type="Texture2D" uid="uid://cb15lex7s508p" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0015.png" id="16_yoetw"]
+[ext_resource type="Texture2D" uid="uid://dtjwo2vj1g2oh" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0016.png" id="17_p5h0v"]
+[ext_resource type="Texture2D" uid="uid://c1mgjpj5wghdk" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0017.png" id="18_q7l2w"]
+[ext_resource type="Texture2D" uid="uid://djfq84reatgqd" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0018.png" id="19_75l2c"]
+[ext_resource type="Texture2D" uid="uid://5d6ce5q17g8k" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0019.png" id="20_3ah3m"]
+[ext_resource type="Texture2D" uid="uid://drqdonlkr3a2c" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0020.png" id="21_r5jh2"]
+[ext_resource type="Texture2D" uid="uid://clq7g646tjd0" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0021.png" id="22_yyxkf"]
+[ext_resource type="Texture2D" uid="uid://7kf0iwdy0thc" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0022.png" id="23_5c1y4"]
+[ext_resource type="Texture2D" uid="uid://wvdukfn6ih6k" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0023.png" id="24_doyfc"]
+[ext_resource type="Texture2D" uid="uid://ciu0bsuk61dr6" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0024.png" id="25_cgadq"]
+[ext_resource type="Texture2D" uid="uid://dglecv22i0s3u" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0031.png" id="26_qtfa6"]
+[ext_resource type="Texture2D" uid="uid://djgoaf4ijkiay" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0032.png" id="27_jh34p"]
+[ext_resource type="Texture2D" uid="uid://cd3ydq02ylrcx" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0033.png" id="28_3duv4"]
+[ext_resource type="Texture2D" uid="uid://fy4m0id400ff" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0034.png" id="29_vhaw0"]
+[ext_resource type="Texture2D" uid="uid://b2inrjtrlpf0x" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0035.png" id="30_vnbjb"]
+[ext_resource type="Texture2D" uid="uid://irfa0iafbp11" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0036.png" id="31_lnkuc"]
+[ext_resource type="Texture2D" uid="uid://8hv3pebqbwrn" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0037.png" id="32_twk5u"]
+[ext_resource type="Texture2D" uid="uid://cww8mgjeisrl6" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0026.png" id="33_gab4w"]
+[ext_resource type="Texture2D" uid="uid://drwntldsc8vcr" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0027.png" id="34_yficv"]
+[ext_resource type="Texture2D" uid="uid://c5i0no8inpe4e" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0028.png" id="35_cd22g"]
+[ext_resource type="Texture2D" uid="uid://bprnqdah2syur" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0029.png" id="36_o0234"]
+[ext_resource type="Texture2D" uid="uid://cey8foxbsveqf" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0001.png" id="37_4rglx"]
+[ext_resource type="Texture2D" uid="uid://cmabl8y7aye3c" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0002.png" id="38_uvbbo"]
+[ext_resource type="Texture2D" uid="uid://mugbid185adb" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0003.png" id="39_17hd7"]
+[ext_resource type="Texture2D" uid="uid://d4xxh64hy2bj" path="res://Space_bits/Sprites/Enemies/Enemy_3/Enemy_3_Turret/Enemy_3_Turret_0004.png" id="40_rb1k0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pnjvi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_rrkpp")
+}],
+"loop": false,
+"name": &"Body_Attack",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_pdlw7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dl7xu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1txfy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7d2t8")
+}],
+"loop": true,
+"name": &"Body_Idle",
+"speed": 4.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yva0l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_ls114")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_kt4nx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_c8kt2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_tfy3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_gy0ay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_q1e8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_oqlln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_vkcd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_y1lsv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_yoetw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_p5h0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_q7l2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_75l2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_3ah3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_r5jh2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_yyxkf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_5c1y4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_doyfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_cgadq")
+}],
+"loop": false,
+"name": &"Charging_Turret_Attack",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_qtfa6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_jh34p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_3duv4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_vhaw0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_vnbjb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_lnkuc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_twk5u")
+}],
+"loop": false,
+"name": &"Turret_Attack",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_gab4w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_yficv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_cd22g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_o0234")
+}],
+"loop": false,
+"name": &"Turret_Attack_Indicator",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_4rglx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_uvbbo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_17hd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_rb1k0")
+}],
+"loop": true,
+"name": &"Turret_Idle",
+"speed": 3.0
+}]
+
+[node name="Enemy_Sniper" type="RigidBody2D"]
+position = Vector2(64, 64)
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource("1_0gstp")
+
+[node name="AnimationParts" type="Node2D" parent="."]
+
+[node name="AnimatedSprite2DBody" type="AnimatedSprite2D" parent="AnimationParts"]
+texture_filter = 1
+scale = Vector2(1.05, 1.05)
+sprite_frames = SubResource("SpriteFrames_pnjvi")
+animation = &"Body_Idle"
+frame = 2
+frame_progress = 0.765855
+
+[node name="AnimatedSprite2DTurret" type="AnimatedSprite2D" parent="AnimationParts"]
+visibility_layer = 7
+texture_filter = 1
+position = Vector2(-11, 0)
+scale = Vector2(1.05, 1.05)
+sprite_frames = SubResource("SpriteFrames_yva0l")
+animation = &"Turret_Attack"
+
+[node name="Bullet" type="Marker2D" parent="AnimationParts/AnimatedSprite2DTurret" groups=["Enemy"]]
+position = Vector2(10.4762, 0)
+
+[node name="StalledUntilAttackTimer" type="Timer" parent="."]
+
+[node name="DestroyEnemyObject" type="Timer" parent="."]
+
+[node name="PlayerAttackCollision" type="Area2D" parent="."]
+metadata/_edit_group_ = true
+
+[node name="PlayerWeaponAOE" type="CollisionPolygon2D" parent="PlayerAttackCollision"]
+scale = Vector2(1.05, 1.05)
+polygon = PackedVector2Array(6, -21, 3, -21, 3, -20, 0, -20, 0, -19, -1, -19, -1, -18, -2, -18, -2, -17, -3, -17, -3, -16, -2, -16, -2, -15, -1, -15, -1, -14, 0, -14, 0, -13, 1, -13, 3, -13, 3, -12, 9, -12, 9, -11, 15, -11, 15, -10, 16, -10, 16, -9, 18, -9, 18, -8, 20, -8, 20, -7, 22, -7, 22, -6, 24, -6, 24, -5, 25, -5, 25, -4, 26, -4, 26, -3, 26, -2, 27, -2, 27, 2, 26, 2, 26, 4, 25, 4, 25, 5, 24, 5, 24, 6, 22, 6, 22, 7, 20, 7, 20, 8, 18, 8, 18, 9, 16, 9, 16, 10, 15, 10, 15, 11, 9, 11, 9, 12, 3, 12, 3, 13, 0, 13, 0, 14, -1, 14, -1, 15, -2, 15, -2, 16, -3, 16, -3, 17, -2, 17, -2, 18, -1, 18, -1, 19, 0, 19, 0, 20, 3, 20, 3, 21, 6, 21, 6, 25, 5, 25, 5, 27, 3, 27, 3, 28, 0, 28, 0, 29, -3, 29, -3, 30, -10, 30, -10, 29, -13, 29, -13, 28, -14, 28, -14, 27, -16, 27, -16, 26, -17, 26, -17, 25, -18, 25, -18, 24, -19, 24, -19, 23, -20, 23, -20, 22, -21, 22, -21, 21, -22, 21, -22, 19, -23, 19, -23, 18, -24, 18, -24, 17, -25, 17, -25, 7, -25, -7, -25, -17, -24, -17, -24, -18, -23, -18, -23, -19, -22, -19, -22, -21, -21, -21, -21, -22, -20, -22, -20, -23, -19, -23, -19, -24, -18, -24, -18, -25, -17, -25, -17, -26, -16, -26, -16, -27, -14, -27, -14, -28, -13, -28, -13, -29, -10, -29, -10, -30, -3, -30, -3, -29, 0, -29, 0, -28, 3, -28, 3, -27, 5, -27, 5, -26, 5, -25, 6, -25)
+
+[connection signal="animation_finished" from="AnimationParts/AnimatedSprite2DTurret" to="." method="_on_animated_sprite_2d_turret_animation_finished"]
+[connection signal="timeout" from="StalledUntilAttackTimer" to="." method="_on_stalled_until_attack_timeout"]
+[connection signal="timeout" from="DestroyEnemyObject" to="." method="_on_destroy_enemy_object_timeout"]
+[connection signal="area_entered" from="PlayerAttackCollision" to="." method="_on_player_attack_collision_area_entered"]

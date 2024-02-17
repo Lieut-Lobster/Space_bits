@@ -14,6 +14,8 @@
 [sub_resource type="CanvasTexture" id="CanvasTexture_dj4yg"]
 
 [node name="FooterUI" type="Node2D"]
+top_level = true
+visibility_layer = 15
 
 [node name="UICanvasItem" type="Sprite2D" parent="."]
 self_modulate = Color(0.14902, 0.14902, 0.14902, 1)
