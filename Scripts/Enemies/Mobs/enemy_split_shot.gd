@@ -87,7 +87,7 @@ func _on_stalled_until_attack_timeout():
 	if wait_to_attack < attack_initiative:
 		wait_to_attack += 1
 	else:
-		start_charging_attack = true	
+		start_charging_attack = true
 
 func _on_destroy_enemy_object_timeout():
 	queue_free()
