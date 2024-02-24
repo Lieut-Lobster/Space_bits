@@ -10,6 +10,7 @@ var destroyEnemyTime := 1
 var is_dead := false
 var is_blowing_up := false
 
+var enemy_hp := 10
 var enemy_damage := 5
 
 @onready var velocity = Vector2.ZERO
@@ -137,5 +138,7 @@ func killed():
 	
 func _on_laser_collision_area_entered(area):
 	if area.is_in_group("lasers"):
-		killed()
+		enemy_hp -= 3
+		if enemy_hp <= 0:
+			killed()
 		area.queue_free()
