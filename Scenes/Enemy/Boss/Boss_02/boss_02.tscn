@@ -1,44 +1,85 @@
-[gd_scene load_steps=65 format=3 uid="uid://b4pju4xxh8jpg"]
+[gd_scene load_steps=111 format=3 uid="uid://b4pju4xxh8jpg"]
 
 [ext_resource type="Script" path="res://Space_bits/Scripts/Enemies/Bosses/Boss_02/boss_02.gd" id="1_qwt3t"]
-[ext_resource type="Texture2D" uid="uid://c75y1l0m7q0a1" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Boss_02_body.png" id="2_aem1i"]
+[ext_resource type="PackedScene" uid="uid://dt11m4rc1p51r" path="res://Space_bits/Scenes/Enemy/Boss/Boss_02/Boss_attacks/death_beam.tscn" id="2_pyexw"]
 [ext_resource type="Texture2D" uid="uid://b0yurrpj0e6ye" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eye/Boss_02_Eye_Test.png" id="2_pytet"]
+[ext_resource type="Texture2D" uid="uid://dx10hvadlgxpu" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Body/Boss_02_Body_Final_0007.png" id="3_5cijn"]
 [ext_resource type="Script" path="res://Space_bits/Scripts/Enemies/Bosses/Boss_02/PupilCollision.gd" id="4_7q0w8"]
 [ext_resource type="Texture2D" uid="uid://cd5lab5n4ovce" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0001.png" id="4_drftd"]
+[ext_resource type="Texture2D" uid="uid://bt6m8rs4xysel" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Body/Boss_02_Body_Final_0008.png" id="4_mj4ay"]
 [ext_resource type="Texture2D" uid="uid://xfugsc20mpqj" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0006.png" id="5_07nbj"]
+[ext_resource type="Texture2D" uid="uid://s7qhf7e6p0vn" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Body/Boss_02_Body_Final_0009.png" id="5_iff1r"]
 [ext_resource type="Texture2D" uid="uid://kc6j8ru3rx6w" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0002.png" id="5_rxupq"]
 [ext_resource type="Texture2D" uid="uid://drhv7opwcsyvb" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0001.png" id="5_t5e7o"]
 [ext_resource type="Texture2D" uid="uid://bte88a1v71nr5" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil.png" id="5_wdbd2"]
 [ext_resource type="Texture2D" uid="uid://bexknn4csink6" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0002.png" id="6_3nrss"]
+[ext_resource type="Texture2D" uid="uid://r1g7inaksnpv" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Body/Boss_02_Body_Final_0011.png" id="6_dvpck"]
 [ext_resource type="Texture2D" uid="uid://ccg02ge4oi73" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0003.png" id="6_pqo27"]
+[ext_resource type="Texture2D" uid="uid://hmm5npx1dts1" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Body/Boss_02_Body_Final_0012.png" id="7_3unm6"]
 [ext_resource type="Texture2D" uid="uid://b303bovfmswjo" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0004.png" id="7_jrslr"]
 [ext_resource type="Texture2D" uid="uid://ch6qswshfpuvy" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Absorbing_particle_effect.png" id="7_qg4gc"]
 [ext_resource type="Texture2D" uid="uid://cxtbvi524orqk" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0003.png" id="7_u10as"]
+[ext_resource type="Texture2D" uid="uid://bfu6v7narge23" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Body/Boss_02_Body_Final_0013.png" id="8_8xsip"]
 [ext_resource type="Texture2D" uid="uid://dy2ubiqbaoew1" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0004.png" id="8_v5f15"]
 [ext_resource type="Texture2D" uid="uid://bnb5uhtkdxwvn" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0005.png" id="8_vt13h"]
 [ext_resource type="Texture2D" uid="uid://dv4r76megbwid" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0006.png" id="9_jrv64"]
+[ext_resource type="Texture2D" uid="uid://b1v21ch8okrp2" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Body/Boss_02_Body_Final_0003.png" id="9_kg6ci"]
 [ext_resource type="Texture2D" uid="uid://hylfntikwm7y" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0005.png" id="9_mxmp8"]
+[ext_resource type="Texture2D" uid="uid://bd3jrld3nr4ro" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Body/Boss_02_Body_Final_0004.png" id="10_liqt4"]
 [ext_resource type="Texture2D" uid="uid://cf26e2tkyonnb" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0007.png" id="10_ykjmk"]
 [ext_resource type="Texture2D" uid="uid://66nbkjhjtfe2" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0008.png" id="11_0v6vu"]
+[ext_resource type="Texture2D" uid="uid://bajatsotkuk3f" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Body/Boss_02_Body_Final_0005.png" id="11_fvtm3"]
 [ext_resource type="Texture2D" uid="uid://b5mdud57qteqr" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0009.png" id="12_p78s7"]
+[ext_resource type="Texture2D" uid="uid://brewyer7omora" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Body/Boss_02_Body_Final_0001.png" id="12_ujnnj"]
 [ext_resource type="Texture2D" uid="uid://dm17q5ionkw8k" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0010.png" id="13_aksu0"]
+[ext_resource type="Texture2D" uid="uid://bca3iuflketqx" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Attack_Finish/Tentacles_Attack_Finish_0001.png" id="13_rs3fg"]
 [ext_resource type="Texture2D" uid="uid://obb0yivg2ies" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0011.png" id="14_5qnhv"]
+[ext_resource type="Texture2D" uid="uid://c3usqa6ly68rj" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Attack_Finish/Tentacles_Attack_Finish_0002.png" id="14_q3prr"]
 [ext_resource type="Texture2D" uid="uid://p8midllmdn2o" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0012.png" id="15_2p4p1"]
+[ext_resource type="Texture2D" uid="uid://csp5rlp1p84q1" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Trail/Red_tentacle_Trail.png" id="15_7rjw7"]
+[ext_resource type="Texture2D" uid="uid://bq8lhfaxg34o7" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Tentacles_start.png" id="15_81gmf"]
+[ext_resource type="Texture2D" uid="uid://canuggsotc0ip" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Attack_Finish/Tentacles_Attack_Finish_0003.png" id="15_jakkn"]
 [ext_resource type="Texture2D" uid="uid://dopmyoli05y37" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0013.png" id="16_fadsy"]
+[ext_resource type="Texture2D" uid="uid://c7gw12e0myhb2" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Attack_Finish/Tentacles_Attack_Finish_0004.png" id="16_gl5al"]
+[ext_resource type="Texture2D" uid="uid://1678b33xdygb" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Tentacles_0011.png" id="16_j138i"]
+[ext_resource type="Texture2D" uid="uid://bpdooedyv7ibk" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Tentacles_0012.png" id="17_3gs0h"]
+[ext_resource type="Texture2D" uid="uid://d4a3oy62tdnra" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Attack_Finish/Tentacles_Attack_Finish_0005.png" id="17_vy6p0"]
 [ext_resource type="Texture2D" uid="uid://bd7ipicufbrxx" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0014.png" id="17_wemow"]
 [ext_resource type="Texture2D" uid="uid://vdjonixougp" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0015.png" id="18_dyjbx"]
+[ext_resource type="Texture2D" uid="uid://b57cysin0bafr" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Tentacles_0013.png" id="18_i0cf0"]
+[ext_resource type="Texture2D" uid="uid://dpq7d275huyl2" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Attack_Finish/Tentacles_Attack_Finish_0006.png" id="18_y45tw"]
 [ext_resource type="Texture2D" uid="uid://evcm6cchw2yx" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0016.png" id="19_dc2bq"]
+[ext_resource type="Texture2D" uid="uid://58phkubg1fno" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Attack_Finish/Tentacles_Attack_Finish_0007.png" id="19_hrshh"]
+[ext_resource type="Texture2D" uid="uid://c8kkgdcfnj3vf" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Tentacles_0014.png" id="19_qv047"]
 [ext_resource type="Texture2D" uid="uid://b7f0akc44aug7" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0017.png" id="20_1skbd"]
+[ext_resource type="Texture2D" uid="uid://dw4d74x5nv2l7" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Tentacles_0015.png" id="20_ntb4r"]
+[ext_resource type="Texture2D" uid="uid://dlll7bacw6yf4" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Attack_Start/Tentacles_Attack_Start_0001.png" id="20_sb3vi"]
 [ext_resource type="Texture2D" uid="uid://d1aeeduqj8pjd" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Open/Boss_02_Eyelid_0018.png" id="21_b006l"]
+[ext_resource type="Texture2D" uid="uid://dd1fdwnj8oash" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Attack_Start/Tentacles_Attack_Start_0002.png" id="21_jwns0"]
+[ext_resource type="Texture2D" uid="uid://dcd5moxrwpp53" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Tentacles_0016.png" id="21_qu8fb"]
 [ext_resource type="Texture2D" uid="uid://do165lckguip" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Close/Boss_02_Eyelid_0020.png" id="22_4oreg"]
+[ext_resource type="Texture2D" uid="uid://ccansv6fuht2x" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Attack_Start/Tentacles_Attack_Start_0003.png" id="22_21r5p"]
+[ext_resource type="Texture2D" uid="uid://cbsjlx17jkd1d" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Tentacles_0017.png" id="22_ofihe"]
+[ext_resource type="Texture2D" uid="uid://d3xv2gfvy5hf8" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Tentacles_0001.png" id="23_1hn5h"]
 [ext_resource type="Texture2D" uid="uid://5015gvvagkb0" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Close/Boss_02_Eyelid_0021.png" id="23_1nl2q"]
+[ext_resource type="Texture2D" uid="uid://cdrvb1581qyqt" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Attack_Start/Tentacles_Attack_Start_0004.png" id="23_2g4u2"]
 [ext_resource type="Texture2D" uid="uid://o2u1p5lwi61j" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Close/Boss_02_Eyelid_0022.png" id="24_05qyw"]
+[ext_resource type="Texture2D" uid="uid://dljxb0yckq5n1" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Attack_Start/Tentacles_Attack_Start_0005.png" id="24_23ron"]
+[ext_resource type="Texture2D" uid="uid://c2wefchgajamw" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Tentacles_0002.png" id="24_ulx5a"]
+[ext_resource type="Texture2D" uid="uid://fxk6s2g8ekar" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Attack_Start/Tentacles_Attack_Start_0006.png" id="25_3bumx"]
+[ext_resource type="Texture2D" uid="uid://bn3t4bfyths4" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Tentacles_0003.png" id="25_swwba"]
 [ext_resource type="Texture2D" uid="uid://g1idas1qxp3r" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Close/Boss_02_Eyelid_0023.png" id="25_tkhg8"]
+[ext_resource type="Texture2D" uid="uid://c0mt6y65j1fvt" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Attack_Start/Tentacles_Attack_Start_0007.png" id="26_2s5u8"]
 [ext_resource type="Texture2D" uid="uid://c368n3an824wn" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Close/Boss_02_Eyelid_0024.png" id="26_8il3n"]
+[ext_resource type="Texture2D" uid="uid://dxv0ixiwtb6jn" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Tentacles_0004.png" id="26_hgllx"]
+[ext_resource type="Texture2D" uid="uid://dt3gwaqfblqh1" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Tentacles_0005.png" id="27_a13iu"]
 [ext_resource type="Texture2D" uid="uid://brinrugcto3xp" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Close/Boss_02_Eyelid_0025.png" id="27_qq3wx"]
 [ext_resource type="Texture2D" uid="uid://b1bfs7cja3enl" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Close/Boss_02_Eyelid_0026.png" id="28_ekcxg"]
+[ext_resource type="Texture2D" uid="uid://6v04006hi1ke" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Tentacles_0006.png" id="28_nqo7t"]
+[ext_resource type="Texture2D" uid="uid://du4vuonywo7nv" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Tentacles_0007.png" id="29_2brv6"]
 [ext_resource type="Texture2D" uid="uid://cre8tspbgoxoj" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Close/Boss_02_Eyelid_0027.png" id="29_43fyl"]
 [ext_resource type="Texture2D" uid="uid://bsg1gqy0oco6v" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Close/Boss_02_Eyelid_0028.png" id="30_8pnu0"]
+[ext_resource type="Texture2D" uid="uid://b7kjvg3yq6bu2" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Red/Tentacles_0008.png" id="30_iqn44"]
 [ext_resource type="Texture2D" uid="uid://dm5fpeqppmpfy" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Close/Boss_02_Eyelid_0029.png" id="31_qnh0q"]
 [ext_resource type="Texture2D" uid="uid://dutalxfbcdfv6" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Close/Boss_02_Eyelid_0030.png" id="32_68har"]
 [ext_resource type="Texture2D" uid="uid://bb5bbfhse3jdj" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Close/Boss_02_Eyelid_0031.png" id="33_lklsv"]
@@ -49,6 +90,7 @@
 [ext_resource type="Texture2D" uid="uid://dvce6k0t678hk" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Close/Boss_02_Eyelid_0036.png" id="38_qt7v0"]
 [ext_resource type="Texture2D" uid="uid://dnb3nuvnx48h8" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Close/Boss_02_Eyelid_0037.png" id="39_8r5hh"]
 [ext_resource type="Texture2D" uid="uid://lidmfr6fg4ls" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eyelid/Eyelid_Close/Boss_02_Eyelid_0038.png" id="40_cr5ha"]
+[ext_resource type="Texture2D" uid="uid://c2ycfnon0ygg5" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_RED_Attack/Indicator/Red_Attack_Indicator.png" id="44_8j0bd"]
 [ext_resource type="Texture2D" uid="uid://bd1rd1w7styc7" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0007.png" id="48_j2nn3"]
 [ext_resource type="Texture2D" uid="uid://dlrs3sdc46f4y" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0011.png" id="49_sjko6"]
 [ext_resource type="Texture2D" uid="uid://7mo1i85u8wdt" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0012.png" id="50_a01yi"]
@@ -64,15 +106,191 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_aem1i")
+"texture": ExtResource("3_5cijn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mj4ay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_iff1r")
 }],
 "loop": true,
-"name": &"DefaultSample",
+"name": &"AttackBlue",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_dvpck")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3unm6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8xsip")
+}],
+"loop": true,
+"name": &"AttackGreen",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_kg6ci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_liqt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_fvtm3")
+}],
+"loop": true,
+"name": &"AttackRed",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_ujnnj")
+}],
+"loop": true,
+"name": &"Default",
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_nsmyh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_rs3fg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_q3prr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_jakkn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_gl5al")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_vy6p0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_y45tw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_hrshh")
+}],
+"loop": false,
+"name": &"AttackFinish",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_sb3vi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_jwns0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_21r5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_2g4u2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_23ron")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_3bumx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_2s5u8")
+}],
+"loop": false,
+"name": &"AttackStart",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_81gmf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_j138i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_3gs0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_i0cf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_qv047")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ntb4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_qu8fb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ofihe")
+}],
+"loop": false,
+"name": &"Left-to-Right",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_1hn5h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ulx5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_swwba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_hgllx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_a13iu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_nqo7t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_2brv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_iqn44")
+}],
+"loop": false,
+"name": &"Right-to-Left",
+"speed": 15.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_wrxyv"]
+offsets = PackedFloat32Array(0, 0.405797, 1)
+colors = PackedColorArray(1, 0.384314, 0.384314, 1, 1, 0.113725, 0.113725, 1, 0, 0, 0, 0)
+
+[sub_resource type="Curve" id="Curve_o0m4l"]
+max_value = 2.0
+_data = [Vector2(0.0180723, 0), 0.0, 0.0, 0, 0, Vector2(0.487952, 2), 0.0, 0.0, 0, 0, Vector2(0.722892, 2), 0.0, 0.0, 0, 0, Vector2(0.939759, 0.989011), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[sub_resource type="Gradient" id="Gradient_txpou"]
+offsets = PackedFloat32Array(0, 0.304348, 0.76087, 0.985507)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 0.294118, 0, 0, 1, 0, 0, 0, 0)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_ki4ag"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_drftd")
+}],
+"loop": false,
+"name": &"Default",
+"speed": 1.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("4_drftd")
@@ -128,9 +346,9 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("21_b006l")
 }],
-"loop": true,
-"name": &"eyelid_close",
-"speed": 12.0
+"loop": false,
+"name": &"EyelidClose",
+"speed": 70.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -190,9 +408,9 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("40_cr5ha")
 }],
-"loop": true,
-"name": &"eyelid_open",
-"speed": 12.0
+"loop": false,
+"name": &"EyelidOpen",
+"speed": 70.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_k883k"]
@@ -280,13 +498,60 @@ collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource("1_qwt3t")
 
+[node name="DeathBeam2D" parent="." instance=ExtResource("2_pyexw")]
+position = Vector2(4.35262e-13, -2.56114e-09)
+
 [node name="AnimatedSpriteBody" type="AnimatedSprite2D" parent="."]
 z_index = 2
 texture_filter = 1
-position = Vector2(66, 0)
+position = Vector2(2.38419e-07, -4.76837e-07)
 scale = Vector2(6, 6)
 sprite_frames = SubResource("SpriteFrames_x100a")
-animation = &"DefaultSample"
+animation = &"AttackGreen"
+
+[node name="RedMarker2D" type="Marker2D" parent="AnimatedSpriteBody"]
+position = Vector2(39.1683, -9.82681)
+
+[node name="RedTentacle" type="AnimatedSprite2D" parent="AnimatedSpriteBody"]
+position = Vector2(29.3361, -16.4951)
+sprite_frames = SubResource("SpriteFrames_nsmyh")
+animation = &"AttackFinish"
+
+[node name="CPUParticlesTrail" type="CPUParticles2D" parent="AnimatedSpriteBody/RedTentacle"]
+z_index = -1
+position = Vector2(3.33361, -1.66611)
+emitting = false
+amount = 1
+lifetime = 0.6
+one_shot = true
+texture = ExtResource("15_7rjw7")
+gravity = Vector2(0, 0)
+angle_min = 270.0
+angle_max = 270.0
+scale_amount_min = 2.0
+scale_amount_max = 2.0
+color = Color(1, 1, 1, 0.443137)
+color_ramp = SubResource("Gradient_wrxyv")
+
+[node name="CPUParticlesIndicator" type="CPUParticles2D" parent="AnimatedSpriteBody/RedTentacle"]
+position = Vector2(15.836, -16.164)
+emitting = false
+amount = 1
+lifetime = 0.6
+one_shot = true
+texture = ExtResource("44_8j0bd")
+gravity = Vector2(0, 0)
+angle_min = -147.1
+angle_max = -147.1
+scale_amount_curve = SubResource("Curve_o0m4l")
+color = Color(1, 1, 1, 0.862745)
+color_ramp = SubResource("Gradient_txpou")
+
+[node name="BlueTentacle" type="AnimatedSprite2D" parent="AnimatedSpriteBody"]
+
+[node name="GreenTentacle" type="AnimatedSprite2D" parent="AnimatedSpriteBody"]
+
+[node name="BackGroundTentacles" type="AnimatedSprite2D" parent="AnimatedSpriteBody"]
 
 [node name="AnimatedSpriteEye" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -297,9 +562,9 @@ texture = ExtResource("2_pytet")
 [node name="AnimatedSpriteEyelid" type="AnimatedSprite2D" parent="AnimatedSpriteEye"]
 z_index = 2
 sprite_frames = SubResource("SpriteFrames_ki4ag")
-animation = &"eyelid_close"
-frame = 4
-frame_progress = 0.731246
+animation = &"Default"
+
+[node name="EyelidAnimTimer" type="Timer" parent="AnimatedSpriteEye/AnimatedSpriteEyelid"]
 
 [node name="PupilCollision" type="Area2D" parent="AnimatedSpriteEye"]
 z_index = 1
@@ -367,9 +632,19 @@ visible = false
 position = Vector2(61, 4)
 polygon = PackedVector2Array(186, 168, 188, -182, 1, -185, -176, -144, -182, 119, -79, 173)
 
+[node name="AttackTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="AttackStaller" type="Timer" parent="."]
+
+[connection signal="animation_finished" from="AnimatedSpriteBody/RedTentacle" to="." method="_on_red_tentacle_animation_finished"]
+[connection signal="animation_finished" from="AnimatedSpriteEye/AnimatedSpriteEyelid" to="." method="_on_animated_sprite_eyelid_animation_finished"]
+[connection signal="timeout" from="AnimatedSpriteEye/AnimatedSpriteEyelid/EyelidAnimTimer" to="." method="_on_eyelid_anim_timer_timeout"]
 [connection signal="animation_finished" from="AnimatedSpriteEye/PupilCollision/AnimatedSpritePupil" to="AnimatedSpriteEye/PupilCollision" method="_on_animated_sprite_pupil_animation_finished"]
 [connection signal="timeout" from="AnimatedSpriteEye/PupilCollision/ChargingBeam" to="AnimatedSpriteEye/PupilCollision" method="_on_charging_beam_timeout"]
 [connection signal="timeout" from="AnimatedSpriteEye/PupilCollision/FullyCharged" to="AnimatedSpriteEye/PupilCollision" method="_on_fully_charged_timeout"]
 [connection signal="timeout" from="AnimatedSpriteEye/PupilCollision/DeathBeamFiring" to="AnimatedSpriteEye/PupilCollision" method="_on_death_beam_firing_timeout"]
 [connection signal="timeout" from="AnimatedSpriteEye/PupilCollision/BeamCoolingDown" to="AnimatedSpriteEye/PupilCollision" method="_on_beam_cooling_down_timeout"]
 [connection signal="timeout" from="AnimatedSpriteEye/PupilCollision/PupilBaseState" to="AnimatedSpriteEye/PupilCollision" method="_on_pupil_base_state_timeout"]
+[connection signal="timeout" from="AttackTimer" to="." method="_on_attack_timer_timeout"]
+[connection signal="timeout" from="AttackStaller" to="." method="_on_attack_staller_timeout"]

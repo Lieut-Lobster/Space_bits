@@ -1,9 +1,9 @@
 extends Node2D
 
 var preloadedEnemies := [
-	preload("res://Space_bits/Scenes/Enemy/Boss/Boss_01.tscn"),
-	preload("res://Space_bits/Scenes/Enemy/mobs/Enemy_Rammer.tscn"),
-	preload("res://Space_bits/Scenes/Enemy/mobs/enemy_sniper.tscn")
+	preload("res://Space_bits/Scenes/Enemy/Boss/Boss_01/Boss_01.tscn"),
+	preload("res://Space_bits/Scenes/Enemy/mobs/Rammer/Enemy_Rammer.tscn"),
+	preload("res://Space_bits/Scenes/Enemy/mobs/Sniper/enemy_sniper.tscn")
 ]
 
 @onready var spawnTimer := $SpawnTimer

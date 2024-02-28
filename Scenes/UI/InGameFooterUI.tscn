@@ -16,6 +16,7 @@
 [node name="FooterUI" type="Node2D"]
 top_level = true
 visibility_layer = 15
+z_index = 4
 
 [node name="UICanvasItem" type="Sprite2D" parent="."]
 self_modulate = Color(0.14902, 0.14902, 0.14902, 1)
@@ -25,6 +26,7 @@ texture = SubResource("CanvasTexture_dj4yg")
 
 [node name="PlayerStatBars" type="Control" parent="UICanvasItem"]
 top_level = true
+z_index = 4
 layout_mode = 3
 anchors_preset = 2
 anchor_top = 1.0

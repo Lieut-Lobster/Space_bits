@@ -9,7 +9,7 @@ extends RigidBody2D
 @onready var StallUntilAttack := $StalledUntilAttackTimer
 var stall_attack_time := 0.2
 
-const bulletPath = preload('res://Space_bits/Scenes/Enemy/mobs/Enemy_Sniper_Bullet/enemy_3_shot.tscn')
+const bulletPath = preload('res://Space_bits/Scenes/Enemy/mobs/Sniper/Enemy_Sniper_Bullet/enemy_3_shot.tscn')
 var deg_for_bullet : float
 
 var start_charging_attack := false
