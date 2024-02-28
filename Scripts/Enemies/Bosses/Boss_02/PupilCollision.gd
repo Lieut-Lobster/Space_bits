@@ -43,8 +43,8 @@ func _process(delta):
 		if is_death_beam_activated == true:
 			move_pupil_to_center(delta)
 			if is_charging_beam_timer_started == false:
-				ChargingBeamTimer.start(charging_beam_time)
 				is_charging_beam_timer_started = true
+				ChargingBeamTimer.start(charging_beam_time)
 		else:
 			move_pupil_to_follow_player(delta)
 		
@@ -64,6 +64,7 @@ func move_pupil_to_center(delta):
 	var y = lerp(AnimatedPupil.global_position.y, CenterOfEyeMarker.global_position.y, 1)
 	AnimatedPupil.global_position += Vector2(x - AnimatedPupil.global_position.x,
 											 y - AnimatedPupil.global_position.y) * (delta * pupil_speed)
+
 func anim_play(anim_index : int):
 	AnimatedPupil.play(animation_array_pupil[anim_index])
 

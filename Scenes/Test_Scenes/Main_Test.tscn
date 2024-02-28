@@ -1,7 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://bn2672jrv2o1i"]
+[gd_scene load_steps=16 format=3 uid="uid://bn2672jrv2o1i"]
 
 [ext_resource type="Script" path="res://Space_bits/Main.gd" id="1_716ve"]
-[ext_resource type="PackedScene" uid="uid://cbavyi1vug6ig" path="res://Space_bits/Scenes/Enemy/Boss/Boss_01.tscn" id="2_1tnlt"]
+[ext_resource type="PackedScene" uid="uid://cbavyi1vug6ig" path="res://Space_bits/Scenes/Enemy/Boss/Boss_01/Boss_01.tscn" id="2_1tnlt"]
 [ext_resource type="PackedScene" uid="uid://gkao2styqi2a" path="res://Space_bits/Scenes/Player/Player.tscn" id="3_7jvsp"]
 [ext_resource type="Texture2D" uid="uid://yg3kqijhfuwm" path="res://Space_bits/Sprites/Player/Stats/Shield/Player_Shield_Outline.png" id="4_k3srt"]
 [ext_resource type="Texture2D" uid="uid://do21myuyf88xm" path="res://Space_bits/Sprites/Player/Stats/Health/Player_HP_Outline.png" id="4_nkel3"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://dij3vqn4tc1cx" path="res://Space_bits/Sprites/Player/Stats/Stamina/Player_Stamina_Body_0002.png" id="11_07mmu"]
 [ext_resource type="Texture2D" uid="uid://2tpvu787c6vr" path="res://Space_bits/Sprites/Player/Stats/Stamina/Player_Stamina_Body_0001.png" id="12_8y5gm"]
 [ext_resource type="PackedScene" uid="uid://b4pju4xxh8jpg" path="res://Space_bits/Scenes/Enemy/Boss/Boss_02/boss_02.tscn" id="13_3648v"]
+[ext_resource type="PackedScene" uid="uid://dsari2olnouyo" path="res://Space_bits/Scenes/UI/InGameFooterUI.tscn" id="13_uwaub"]
 
 [sub_resource type="Curve2D" id="Curve2D_anor5"]
 _data = {
@@ -25,7 +26,7 @@ script = ExtResource("1_716ve")
 mob_scene = ExtResource("2_1tnlt")
 
 [node name="Player" parent="." instance=ExtResource("3_7jvsp")]
-position = Vector2(384, 504)
+position = Vector2(352, 600)
 
 [node name="MobTimer" type="Timer" parent="."]
 wait_time = 0.5
@@ -37,8 +38,7 @@ wait_time = 2.0
 one_shot = true
 
 [node name="StartPosition" type="Marker2D" parent="."]
-visible = false
-position = Vector2(640, 560)
+position = Vector2(352, 704)
 
 [node name="MobPath" type="Path2D" parent="."]
 visible = false
@@ -49,6 +49,7 @@ curve = SubResource("Curve2D_anor5")
 visible = false
 
 [node name="PlayerStatBars" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 2
 anchor_top = 1.0
@@ -118,6 +119,8 @@ value = 60.0
 fill_mode = 3
 texture_under = ExtResource("11_07mmu")
 texture_progress = ExtResource("12_8y5gm")
+
+[node name="FooterUI" parent="." instance=ExtResource("13_uwaub")]
 
 [node name="Boss_02" parent="." instance=ExtResource("13_3648v")]
 

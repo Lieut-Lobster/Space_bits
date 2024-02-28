@@ -5,7 +5,12 @@ extends Control
 @onready var player_stamina_bar = $Stamina2DSprite/StaminaProgressBar
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	for node in self.get_children():
+		if node.name == "DeathBeam2D":
+			continue
+		if node.modulate == Color(1, 1, 1):
+			node.modulate = Color(0.80, 0.80, 0.80)
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

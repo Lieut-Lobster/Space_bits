@@ -1,8 +1,6 @@
 extends Area2D
 
 @onready var EnemyBullet := $AnimatedSniperShot
-@onready var DeleteBulletTimer := $DeleteBulletLater
-var DeleteBulletDuration := 0.5
 
 @export var bulletSpeed := 600
 
@@ -21,8 +19,6 @@ func _process(delta):
 		
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
-	DeleteBulletTimer.start(DeleteBulletDuration)
-
-
-func _on_delete_bullet_later_timeout():
+	print(name, " Gone!")
 	queue_free()
+
