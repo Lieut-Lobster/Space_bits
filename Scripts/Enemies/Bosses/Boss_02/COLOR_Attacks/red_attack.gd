@@ -5,7 +5,10 @@ extends Area2D
 
 var speed := 300
 var velocity : Vector2
+
 var damage := 15
+var enemy_type = "Boss_02 - RED Attack"
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -13,7 +16,6 @@ func _ready():
 	rotate(BossMechanics._attack_angle_to_player)
 	RedAttackTrail.angle_max = -rad_to_deg(BossMechanics._attack_angle_to_player)
 	velocity = Vector2(0, speed).rotated(BossMechanics._attack_angle_to_player - 1.5707963268)
-	print(BossMechanics._attack_angle_to_player)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -26,8 +28,4 @@ func _on_visible_on_screen_notifier_2d_screen_exited():
 
 func _on_body_entered(body):
 	if body.name == "Player":
-		Player.player_take_damage(damage)
-		if Player.player_shield != 0:
-			print(Player.player_shield)
-		else:
-			print(Player.player_hp)
+		Player.player_take_damage(damage, enemy_type)

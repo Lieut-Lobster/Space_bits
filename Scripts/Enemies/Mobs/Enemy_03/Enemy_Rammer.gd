@@ -11,7 +11,8 @@ var is_dead := false
 var is_blowing_up := false
 
 var enemy_hp := 10
-var enemy_damage := 5
+var damage := 15
+var enemy_type := "Enemy_02 - Rammer"
 
 @onready var velocity = Vector2.ZERO
 
@@ -36,23 +37,19 @@ var animation_array := [
 	"On_Death"
 ]
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	$AnimatedSprite2D.play(animation_array[animation_index])
 	attackTimer.start(nextSpawnTime)
 	# Rotate number assoicated here is very close to 90 degrees in radians
 	rotate(1.5707963268)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
-	# print(Global.player_pos)
 	if is_dead == false:
 		change_attack_animation()
 		if attacking == true:
 			if is_targeting_player == true:
 				is_targeting_player = false
 				stallToAttackTimer.start(stallTime)
-			
 			if (
 				(position.x <= get_player_pos_x + 20 && position.x >= get_player_pos_x - 20) &&
 				(position.y <= get_player_pos_y + 20 && position.y >= get_player_pos_y - 20) &&
@@ -62,9 +59,6 @@ func _physics_process(delta):
 				if is_blowing_up == true:
 					is_blowing_up = false
 					suicide()
-				#print(player_rammed)
-			
-			
 			# Fix look_at() later, gotta be slower to turn to the player
 			if Player.player_pos != null:
 				look_at(Player.player_pos)
@@ -119,15 +113,12 @@ func _on_blow_up_then_destroy_enemy_timeout():
 
 func _on_player_collision_body_entered(body):
 	if body.name == "Player":
-		Player.player_take_damage(enemy_damage)
-		print(Player.player_shield)
+		Player.player_take_damage(damage, enemy_type)
 
 func suicide():
-	print("Freeing Queue after ", destroyEnemyTime, " Second(s):")
 	destroyEnemyObject.start(destroyEnemyTime)
 	
 func killed():
-	print("I JUST GOT KILLED!")
 	is_dead = true
 	$LaserCollision.queue_free()
 	$PlayerCollision.queue_free()

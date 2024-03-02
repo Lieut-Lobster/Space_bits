@@ -1,0 +1,428 @@
+[gd_scene load_steps=53 format=3 uid="uid://cd2u46fedva8m"]
+
+[ext_resource type="Script" path="res://Space_bits/Scripts/Enemies/Bosses/Boss_02/COLOR_Attacks/green_attack.gd" id="1_xndf2"]
+[ext_resource type="Texture2D" uid="uid://bn2hufwmcuwdc" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/On_Attack/Green_Attack_0002.png" id="2_4rj41"]
+[ext_resource type="Texture2D" uid="uid://bdkhvhn3jwgw6" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/On_Attack/Green_Attack_0003.png" id="3_1n31f"]
+[ext_resource type="Texture2D" uid="uid://byowealojta3m" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/On_Attack/Green_Attack_0004.png" id="4_qwjkg"]
+[ext_resource type="Texture2D" uid="uid://bqfcgekwuv3yy" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/On_Attack/Green_Attack_0005.png" id="5_oxelc"]
+[ext_resource type="Texture2D" uid="uid://uuy3v03t7s1f" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/On_Attack/Green_Attack_0006.png" id="6_fohqo"]
+[ext_resource type="Texture2D" uid="uid://2xlr1y8vbpd5" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/On_Attack/Green_Attack_0007.png" id="7_ap7m6"]
+[ext_resource type="Texture2D" uid="uid://bg6kr4j5tpole" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/On_Attack/Green_Attack_0008.png" id="8_yg0tn"]
+[ext_resource type="Texture2D" uid="uid://clibqcbpk70ok" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/On_Attack/Green_Attack_0009.png" id="9_3mti0"]
+[ext_resource type="Texture2D" uid="uid://dfnws4e5si8rh" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Dissipate_Explosion/Green_Attack_Dissipate_Explosion_0001.png" id="10_i5aqg"]
+[ext_resource type="Texture2D" uid="uid://di5ww7xxtrx5c" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Green_Attack_0001.png" id="10_qiqh2"]
+[ext_resource type="Texture2D" uid="uid://cksauvqparke8" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Dissipate_Explosion/Green_Attack_Dissipate_Explosion_0002.png" id="11_jpnxk"]
+[ext_resource type="Texture2D" uid="uid://dj2yeu2y47wik" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Dissipate_Explosion/Green_Attack_Dissipate_Explosion_0003.png" id="12_lcf2m"]
+[ext_resource type="Texture2D" uid="uid://c5ks2vt0xatub" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Dissipate_Explosion/Green_Attack_Dissipate_Explosion_0004.png" id="13_1awm6"]
+[ext_resource type="Texture2D" uid="uid://cxy4bwwgosps7" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Explosion/Green_Attack_Explosion_0001.png" id="14_6finx"]
+[ext_resource type="Texture2D" uid="uid://b5kg4ynaxh35l" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Explosion/Green_Attack_Explosion_0002.png" id="15_hjixj"]
+[ext_resource type="Texture2D" uid="uid://qu03y3r28wkr" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Explosion/Green_Attack_Explosion_0003.png" id="16_bs0i8"]
+[ext_resource type="Texture2D" uid="uid://bwnw7aamin18m" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Explosion/Green_Attack_Explosion_0004.png" id="17_n0wle"]
+[ext_resource type="Texture2D" uid="uid://htgyndnylb7j" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Explosion/Green_Attack_Explosion_0005.png" id="18_0uim7"]
+[ext_resource type="Texture2D" uid="uid://1q2m62uupnda" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Explosion/Green_Attack_Explosion_0006.png" id="19_qbicb"]
+[ext_resource type="Texture2D" uid="uid://d2yhn23i473mq" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Explosion/Green_Attack_Explosion_0007.png" id="20_5u1vf"]
+[ext_resource type="Texture2D" uid="uid://cpdts3fv6ccj0" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Explosion/Green_Attack_Explosion_0008.png" id="21_wnrro"]
+[ext_resource type="Texture2D" uid="uid://d3mld3eybnryr" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Explosion/Green_Attack_Explosion_0009.png" id="22_8hisj"]
+[ext_resource type="Texture2D" uid="uid://duulp2glegq5w" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Explosion/Green_Attack_Explosion_0010.png" id="23_6ug7h"]
+[ext_resource type="Texture2D" uid="uid://clptdru3tsbrx" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Prep_Explosion/Green_Attack_Prep_Charge_0001.png" id="24_eml8g"]
+[ext_resource type="Texture2D" uid="uid://cwjwycvn3fajc" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Prep_Explosion/Green_Attack_Prep_Charge_0002.png" id="25_qfhmp"]
+[ext_resource type="Texture2D" uid="uid://bay4mawctcrx3" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Prep_Explosion/Green_Attack_Prep_Charge_0003.png" id="26_j6kvt"]
+[ext_resource type="Texture2D" uid="uid://cxsc0pcyfpdxl" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Prep_Explosion/Green_Attack_Prep_Charge_0004.png" id="27_2a6mw"]
+[ext_resource type="Texture2D" uid="uid://bad638sg47n0q" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Prep_Explosion/Green_Attack_Prep_Charge_0005.png" id="28_vnr5e"]
+[ext_resource type="Texture2D" uid="uid://n7kaigxck4xm" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Prep_Explosion/Green_Attack_Prep_Charge_0006.png" id="29_m83ak"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_15aml"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4rj41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1n31f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qwjkg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_oxelc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_fohqo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ap7m6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_yg0tn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3mti0")
+}],
+"loop": true,
+"name": &"default_absorb",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_i5aqg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_jpnxk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_lcf2m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_1awm6")
+}],
+"loop": true,
+"name": &"dissipate_explosion",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_6finx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_hjixj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_bs0i8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_n0wle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_0uim7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_qbicb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_5u1vf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_wnrro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_8hisj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_6ug7h")
+}],
+"loop": true,
+"name": &"explosion",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_eml8g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_qfhmp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_j6kvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_2a6mw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_vnr5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_m83ak")
+}],
+"loop": true,
+"name": &"prep_explosion",
+"speed": 5.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_xtvuy"]
+offsets = PackedFloat32Array(0, 0.161702, 0.497872, 0.834043)
+colors = PackedColorArray(0, 0.615686, 0, 0, 0, 0.615686, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="Gradient" id="Gradient_oam1m"]
+offsets = PackedFloat32Array(0, 0.47234, 0.748936, 1)
+colors = PackedColorArray(0, 0.0705882, 0, 1, 0, 0.301961, 0, 1, 0, 0.32549, 0, 0.737255, 0, 0.615686, 0, 0)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qvibg"]
+radius = 50.01
+
+[sub_resource type="Animation" id="Animation_4umb0"]
+resource_name = "DefaultOrb"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedDefaultOrb:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default_absorb"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedDefaultOrb:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_ijx4i"]
+resource_name = "DissipateExplosion"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedDefaultOrb:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"dissipate_explosion"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedDefaultOrb:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_f0ksd"]
+resource_name = "Explosion"
+length = 0.6
+step = 0.06
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedDefaultOrb:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"explosion"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedDefaultOrb:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.06, 0.12, 0.18, 0.24, 0.3, 0.36, 0.42, 0.48, 0.54),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_imnmk"]
+resource_name = "PrepExplosion"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedDefaultOrb:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"prep_explosion"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedDefaultOrb:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+
+[sub_resource type="Animation" id="Animation_x6d1n"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedDefaultOrb:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default_absorb"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedDefaultOrb:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_07ae2"]
+_data = {
+"DefaultOrb": SubResource("Animation_4umb0"),
+"DissipateExplosion": SubResource("Animation_ijx4i"),
+"Explosion": SubResource("Animation_f0ksd"),
+"PrepExplosion": SubResource("Animation_imnmk"),
+"RESET": SubResource("Animation_x6d1n")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_klxql"]
+animation = &"DefaultOrb"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_1g7aa"]
+animation = &"DissipateExplosion"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cyqq5"]
+animation = &"Explosion"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_t72jp"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_hrrku"]
+animation = &"PrepExplosion"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_xrln3"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_yqhxx"]
+switch_mode = 2
+advance_mode = 2
+advance_condition = &"has_reached_destination"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ktygu"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_mo4h7"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_xie2y"]
+switch_mode = 2
+advance_mode = 2
+advance_condition = &"destination_not_reached"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_jgirk"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_4mlnn"]
+states/DefaultOrb/node = SubResource("AnimationNodeAnimation_klxql")
+states/DefaultOrb/position = Vector2(365, 100)
+states/DissipateExplosion/node = SubResource("AnimationNodeAnimation_1g7aa")
+states/DissipateExplosion/position = Vector2(910, 100)
+states/End/position = Vector2(1079, 100)
+states/Explosion/node = SubResource("AnimationNodeAnimation_cyqq5")
+states/Explosion/position = Vector2(721, 100)
+states/Not_At_Destination/node = SubResource("AnimationNodeStateMachine_t72jp")
+states/Not_At_Destination/position = Vector2(365, 191)
+states/PrepExplosion/node = SubResource("AnimationNodeAnimation_hrrku")
+states/PrepExplosion/position = Vector2(539, 100)
+transitions = ["Start", "DefaultOrb", SubResource("AnimationNodeStateMachineTransition_xrln3"), "DefaultOrb", "PrepExplosion", SubResource("AnimationNodeStateMachineTransition_yqhxx"), "PrepExplosion", "Explosion", SubResource("AnimationNodeStateMachineTransition_ktygu"), "Explosion", "DissipateExplosion", SubResource("AnimationNodeStateMachineTransition_mo4h7"), "DefaultOrb", "Not_At_Destination", SubResource("AnimationNodeStateMachineTransition_xie2y"), "Not_At_Destination", "DefaultOrb", SubResource("AnimationNodeStateMachineTransition_jgirk")]
+graph_offset = Vector2(-24, 15)
+
+[node name="green_attack" type="Area2D"]
+scale = Vector2(0.8, 0.8)
+script = ExtResource("1_xndf2")
+
+[node name="AnimatedDefaultOrb" type="AnimatedSprite2D" parent="."]
+self_modulate = Color(0.85, 0.85, 0.85, 1)
+z_index = 2
+texture_filter = 1
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_15aml")
+animation = &"default_absorb"
+
+[node name="CPUParticlesAbsorb" type="CPUParticles2D" parent="AnimatedDefaultOrb"]
+z_index = 1
+z_as_relative = false
+amount = 30
+emission_shape = 2
+emission_sphere_radius = 20.0
+gravity = Vector2(0, 0)
+orbit_velocity_min = 0.1
+orbit_velocity_max = 0.1
+radial_accel_min = -30.0
+radial_accel_max = -10.0
+angle_max = 180.0
+scale_amount_max = 2.0
+color_ramp = SubResource("Gradient_xtvuy")
+
+[node name="SpriteCircularEdges" type="Sprite2D" parent="."]
+texture_filter = 1
+rotation = 6.28319
+scale = Vector2(3, 3)
+texture = ExtResource("10_qiqh2")
+
+[node name="CPUParticlesEdges" type="CPUParticles2D" parent="SpriteCircularEdges"]
+z_index = -1
+amount = 40
+lifetime = 0.4
+emission_shape = 4
+emission_points = PackedVector2Array(16.5, 0, 0, 16.5, -16.5, 0, 0, -16.5)
+emission_colors = PackedColorArray()
+spread = 5.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 20.0
+initial_velocity_max = 20.0
+angular_velocity_min = -100.0
+angular_velocity_max = -100.0
+orbit_velocity_min = -0.17
+orbit_velocity_max = -0.17
+damping_min = 100.0
+damping_max = 100.0
+angle_max = 90.0
+scale_amount_min = 2.0
+scale_amount_max = 3.0
+color_ramp = SubResource("Gradient_oam1m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qvibg")
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_07ae2")
+}
+tree_root = SubResource("AnimationNodeStateMachine_4mlnn")
+anim_player = NodePath("../AnimationPlayer")
+parameters/conditions/destination_not_reached = false
+parameters/conditions/has_reached_destination = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_07ae2")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="AnimationTree" to="." method="_on_animation_tree_animation_finished"]
+[connection signal="animation_started" from="AnimationTree" to="." method="_on_animation_tree_animation_started"]

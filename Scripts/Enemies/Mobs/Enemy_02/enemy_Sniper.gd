@@ -52,7 +52,6 @@ func _process(delta):
 			TurretAnimated2D.look_at(Player.player_pos)
 		
 func change_attack_animation():
-	#print(start_charging_attack)
 	if start_charging_attack == true:
 		animation_index_turret = 1
 		TurretAnimated2D.animation_finished
@@ -93,16 +92,13 @@ func _on_destroy_enemy_object_timeout():
 	queue_free()
 
 func enemy_3_shoot():
-	print("Enemy 3 shot")
 	Game.enemy_3_degrees_shot(BulletSpawnMarker.global_position.angle_to_point(Player.player_pos))
-	print(Game.enemy_3_deg_for_bullet)
 	var bullet = bulletPath.instantiate()
 	bullet.add_to_group("bullets")
 	get_parent().add_child(bullet)
 	bullet.position = BulletSpawnMarker.global_position
 
 func killed():
-	print("I JUST GOT KILLED!")
 	is_dead = true
 	$PlayerAttackCollision.queue_free()
 	animation_index_body = 1

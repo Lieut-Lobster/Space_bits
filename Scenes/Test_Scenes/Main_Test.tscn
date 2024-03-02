@@ -24,6 +24,7 @@ point_count = 5
 [node name="Main" type="Node"]
 script = ExtResource("1_716ve")
 mob_scene = ExtResource("2_1tnlt")
+metadata/_edit_horizontal_guides_ = [51.0]
 
 [node name="Player" parent="." instance=ExtResource("3_7jvsp")]
 position = Vector2(352, 600)
@@ -123,6 +124,7 @@ texture_progress = ExtResource("12_8y5gm")
 [node name="FooterUI" parent="." instance=ExtResource("13_uwaub")]
 
 [node name="Boss_02" parent="." instance=ExtResource("13_3648v")]
+metadata/_edit_horizontal_guides_ = [125.0]
 
 [connection signal="hit" from="Player" to="Player" method="game_over"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]

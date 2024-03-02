@@ -1,13 +1,10 @@
 extends Area2D
 
-#func _ready():
-	#add_to_group("lasers")
+var speed := 650
 	
 func _process(delta):
-	position.y -= 6
+	position.y -= speed * delta
 	
-
-
+# When Laser off screen, destroy the laser object
 func _on_visible_on_screen_notifier_2d_screen_exited():
-	print("laser gone")
 	queue_free()

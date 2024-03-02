@@ -19,8 +19,6 @@ const laserPath = preload('res://Space_bits/Scenes/Player/Laser.tscn')
 func _ready():
 	position = Vector2((screen_size_x / 2), 808)
 	StaminaRegenTimer.start(stamina_regen_time)
-	#hide()
-	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -79,7 +77,6 @@ func start(pos):
 	$CollisionShape2D.disabled = false
 
 func shoot():
-	print("Shoot!")
 	var laser = laserPath.instantiate()
 	laser.add_to_group("lasers")
 	get_parent().add_child(laser)
