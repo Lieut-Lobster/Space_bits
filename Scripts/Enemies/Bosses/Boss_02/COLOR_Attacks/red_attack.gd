@@ -3,7 +3,7 @@ extends Area2D
 @onready var RedAttackAnim = $AnimatedSprite2D 
 @onready var RedAttackTrail = $AnimatedSprite2D/CPUParticles2D
 
-var speed := 300
+var speed := 380
 var velocity : Vector2
 
 var damage := 15
@@ -15,7 +15,9 @@ func _ready():
 	RedAttackAnim.play("Default")
 	rotate(BossMechanics._attack_angle_to_player)
 	RedAttackTrail.angle_max = -rad_to_deg(BossMechanics._attack_angle_to_player)
+	RedAttackTrail.angle_min = -rad_to_deg(BossMechanics._attack_angle_to_player)
 	velocity = Vector2(0, speed).rotated(BossMechanics._attack_angle_to_player - 1.5707963268)
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://gkao2styqi2a"]
+[gd_scene load_steps=13 format=3 uid="uid://gkao2styqi2a"]
 
 [ext_resource type="Script" path="res://Space_bits/Scripts/Player/player_mechanics.gd" id="1_tvxog"]
 [ext_resource type="Texture2D" uid="uid://bi217ucislav" path="res://Space_bits/Sprites/Player/Directional_Visualization/Player_ship_direct_02.png" id="2_iafp5"]
@@ -16,14 +16,25 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("11_1ge4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_41q2l")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("2_iafp5")
 }, {
 "duration": 1.0,
 "texture": ExtResource("11_1ge4q")
 }],
 "loop": true,
-"name": &"Move_down",
-"speed": 6.0
+"name": &"move_down",
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -33,8 +44,8 @@ animations = [{
 "texture": ExtResource("11_1ge4q")
 }],
 "loop": true,
-"name": &"Move_down_L",
-"speed": 6.0
+"name": &"move_down_left",
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -44,8 +55,8 @@ animations = [{
 "texture": ExtResource("11_1ge4q")
 }],
 "loop": true,
-"name": &"Move_down_R",
-"speed": 6.0
+"name": &"move_down_right",
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -55,8 +66,8 @@ animations = [{
 "texture": ExtResource("11_1ge4q")
 }],
 "loop": true,
-"name": &"Move_left",
-"speed": 6.0
+"name": &"move_left",
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -66,8 +77,8 @@ animations = [{
 "texture": ExtResource("11_1ge4q")
 }],
 "loop": true,
-"name": &"Move_right",
-"speed": 6.0
+"name": &"move_right",
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -77,8 +88,8 @@ animations = [{
 "texture": ExtResource("11_1ge4q")
 }],
 "loop": true,
-"name": &"Move_up",
-"speed": 6.0
+"name": &"move_up",
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -88,8 +99,8 @@ animations = [{
 "texture": ExtResource("11_1ge4q")
 }],
 "loop": true,
-"name": &"Move_up_L",
-"speed": 6.0
+"name": &"move_up_left",
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -99,38 +110,9 @@ animations = [{
 "texture": ExtResource("11_1ge4q")
 }],
 "loop": true,
-"name": &"Move_up_R",
-"speed": 6.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("11_1ge4q")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_41q2l")
-}],
-"loop": true,
-"name": &"Standard_visuals",
-"speed": 6.0
+"name": &"move_up_right",
+"speed": 2.0
 }]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o0omp"]
-radius = 5.33333
-height = 10.6667
-
-[sub_resource type="GDScript" id="GDScript_sjnef"]
-script/source = "extends CollisionShape2D
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-"
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_tvxog")
@@ -140,15 +122,15 @@ metadata/_edit_group_ = true
 texture_filter = 1
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_68klb")
-animation = &"Standard_visuals"
-frame_progress = 0.710093
-speed_scale = 0.65
+animation = &"Idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2(3, 3)
-shape = SubResource("CapsuleShape2D_o0omp")
-one_way_collision_margin = 0.0
-script = SubResource("GDScript_sjnef")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(0, -24, 3, -24, 3, -21, 6, -21, 6, -12, 9, -12, 9, -6, 12, -6, 15, -6, 15, -3, 18, -3, 18, 0, 21, 0, 21, 3, 24, 3, 24, 6, 27, 6, 27, 9, 24, 9, 24, 15, 21, 15, 21, 12, 15, 12, 9, 12, 6, 15, -6, 15, -9, 12, -12, 12, -21, 12, -21, 15, -24, 15, -24, 9, -27, 9, -27, 6, -24, 6, -24, 3, -21, 3, -21, 0, -18, 0, -18, -3, -15, -3, -15, -6, -12, -6, -9, -6, -9, -12, -6, -12, -6, -21, -3, -21, -3, -24)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(0, -24, 3, -24, 3, -21, 6, -21, 6, -12, 9, -12, 9, -6, 12, -6, 15, -6, 15, -3, 18, -3, 18, 0, 21, 0, 21, 3, 24, 3, 24, 6, 27, 6, 27, 9, 24, 9, 24, 15, 21, 15, 21, 12, 15, 12, 9, 12, 6, 15, -6, 15, -9, 12, -12, 12, -21, 12, -21, 15, -24, 15, -24, 9, -27, 9, -27, 6, -24, 6, -24, 3, -21, 3, -21, 0, -18, 0, -18, -3, -15, -3, -15, -6, -12, -6, -9, -6, -9, -12, -6, -12, -6, -21, -3, -21, -3, -24)
 
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(0, -35)
@@ -159,4 +141,8 @@ one_shot = true
 
 [node name="StaminaRegenTimer" type="Timer" parent="."]
 
+[node name="InvincibilityFramesTimer" type="Timer" parent="."]
+one_shot = true
+
 [connection signal="timeout" from="StaminaRegenTimer" to="." method="_on_stamina_regen_timer_timeout"]
+[connection signal="timeout" from="InvincibilityFramesTimer" to="." method="_on_invincibility_frames_timer_timeout"]

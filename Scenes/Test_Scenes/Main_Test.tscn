@@ -29,18 +29,6 @@ metadata/_edit_horizontal_guides_ = [51.0]
 [node name="Player" parent="." instance=ExtResource("3_7jvsp")]
 position = Vector2(352, 600)
 
-[node name="MobTimer" type="Timer" parent="."]
-wait_time = 0.5
-
-[node name="ScoreTimer" type="Timer" parent="."]
-
-[node name="StartTimer" type="Timer" parent="."]
-wait_time = 2.0
-one_shot = true
-
-[node name="StartPosition" type="Marker2D" parent="."]
-position = Vector2(352, 704)
-
 [node name="MobPath" type="Path2D" parent="."]
 visible = false
 scale = Vector2(0.8, 1.0084)
@@ -50,7 +38,6 @@ curve = SubResource("Curve2D_anor5")
 visible = false
 
 [node name="PlayerStatBars" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 2
 anchor_top = 1.0
@@ -125,8 +112,3 @@ texture_progress = ExtResource("12_8y5gm")
 
 [node name="Boss_02" parent="." instance=ExtResource("13_3648v")]
 metadata/_edit_horizontal_guides_ = [125.0]
-
-[connection signal="hit" from="Player" to="Player" method="game_over"]
-[connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
-[connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
-[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]

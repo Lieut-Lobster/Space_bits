@@ -130,6 +130,9 @@ func killed():
 func _on_laser_collision_area_entered(area):
 	if area.is_in_group("lasers"):
 		enemy_hp -= 3
+		area.queue_free()
+		$AnimatedSprite2D.self_modulate = Color.RED
+		await get_tree().create_timer(0.15).timeout
+		$AnimatedSprite2D.self_modulate = Color.WHITE
 		if enemy_hp <= 0:
 			killed()
-		area.queue_free()
