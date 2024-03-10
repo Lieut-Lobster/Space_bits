@@ -9,8 +9,7 @@ extends Area2D
 var explosion_ring_scene = preload("res://Space_bits/Scenes/Custom/ring_collision.tscn")
 
 # speed in this case, 1 = normal speed, speed < 1 == slower, speed > 1 == faster
-var speed := 0.8
-var velocity : Vector2
+var speed := 200.0
 
 var damage := 10
 var enemy_type := "Boss_02 - Green Attack (Pre-Explosion)"
@@ -35,7 +34,21 @@ func _ready():
 func _physics_process(delta):
 	AnimationTreeHandling()
 	if Player.player_pos != null:
-		position += Vector2(0, (players_last_position.y - position.y) * delta * speed).rotated(BossMechanics._attack_angle_to_player - 1.5707963268)
+		if ((position.y < players_last_position.y + 20 && position.y > players_last_position.y - 20) &&
+			(position.x < players_last_position.x + 20 && position.x > players_last_position.x - 20)
+		):
+			if speed > 0:
+				speed -= 2
+			else:
+				speed = 0
+		elif players_last_position.y + 100 > position.y && players_last_position.y - 100 < position.y:
+			speed *= 0.987
+		elif players_last_position.y + 200 > position.y && players_last_position.y - 200 < position.y:
+			speed *= 0.992
+		elif players_last_position.y + 300 > position.y && players_last_position.y - 300 < position.y:
+			speed *= 0.999
+		position += Vector2(0, speed).rotated(BossMechanics._attack_angle_to_player - 1.5707963268) * delta
+		
 	if saw_edges != null:
 		saw_edges.rotation_degrees -= 2
 		if is_saw_blade_shrinking == true:

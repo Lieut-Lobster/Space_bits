@@ -1,7 +1,6 @@
-[gd_scene load_steps=189 format=3 uid="uid://b4pju4xxh8jpg"]
+[gd_scene load_steps=250 format=3 uid="uid://b4pju4xxh8jpg"]
 
 [ext_resource type="Script" path="res://Space_bits/Scripts/Enemies/Bosses/Boss_02/boss_02.gd" id="1_qwt3t"]
-[ext_resource type="PackedScene" uid="uid://dt11m4rc1p51r" path="res://Space_bits/Scenes/Enemy/Boss/Boss_02/Boss_attacks/death_beam.tscn" id="2_pyexw"]
 [ext_resource type="Texture2D" uid="uid://b0yurrpj0e6ye" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eye/Boss_02_Eye_Test.png" id="2_pytet"]
 [ext_resource type="Texture2D" uid="uid://dx10hvadlgxpu" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Body/Boss_02_Body_Final_0007.png" id="3_5cijn"]
 [ext_resource type="Script" path="res://Space_bits/Scripts/Enemies/Bosses/Boss_02/PupilCollision.gd" id="4_7q0w8"]
@@ -93,37 +92,48 @@
 [ext_resource type="Texture2D" uid="uid://c2ycfnon0ygg5" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_RED_Attack/Indicator/Red_Attack_Indicator.png" id="44_8j0bd"]
 [ext_resource type="Texture2D" uid="uid://db0k1ml0my6lr" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Green/Default_Movement_0001.png" id="45_00xpl"]
 [ext_resource type="Texture2D" uid="uid://bx030g25xvc2n" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Tentacles_0012.png" id="45_pmilc"]
+[ext_resource type="Texture2D" uid="uid://b1ttvj2dm2yqs" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Attack/Blue_Tentacle_Attack_0012.png" id="46_ll46f"]
 [ext_resource type="Texture2D" uid="uid://b1xxk6rdaeeum" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Green/Default_Movement_0002.png" id="46_wbswn"]
 [ext_resource type="Texture2D" uid="uid://d2g8wcqwjwe50" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Tentacles_0013.png" id="46_yrg36"]
+[ext_resource type="Texture2D" uid="uid://bdec43ybrudnr" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Attack/Blue_Tentacle_Attack_0011.png" id="47_31fbg"]
 [ext_resource type="Texture2D" uid="uid://dlvt4ocm0tqn4" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Green/Default_Movement_0003.png" id="47_iyyeu"]
 [ext_resource type="Texture2D" uid="uid://bhosl23ot554w" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Tentacles_0014.png" id="47_x4eg1"]
 [ext_resource type="Texture2D" uid="uid://dqs64x7opmene" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Green/Default_Movement_Frame_03.png" id="47_xroc8"]
 [ext_resource type="Texture2D" uid="uid://bd1rd1w7styc7" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0007.png" id="48_j2nn3"]
+[ext_resource type="Texture2D" uid="uid://ld7yvllhn2w4" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Attack/Blue_Tentacle_Attack_0010.png" id="48_j4cj2"]
 [ext_resource type="Texture2D" uid="uid://brfrtgixk70a8" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Tentacles_0015.png" id="48_j7tub"]
 [ext_resource type="Texture2D" uid="uid://blojj2fo3llum" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Green/Default_Movement_0004.png" id="48_r23bd"]
 [ext_resource type="Texture2D" uid="uid://bal5ptp6x66m0" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Green/Default_Movement_0005.png" id="49_7jplo"]
+[ext_resource type="Texture2D" uid="uid://ccra2xk2rc24m" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Attack/Blue_Tentacle_Attack_0009.png" id="49_edcse"]
 [ext_resource type="Texture2D" uid="uid://dlrs3sdc46f4y" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0011.png" id="49_sjko6"]
 [ext_resource type="Texture2D" uid="uid://bjadxjc2u4uof" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Tentacles_0016.png" id="49_ta3h8"]
 [ext_resource type="Texture2D" uid="uid://7mo1i85u8wdt" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0012.png" id="50_a01yi"]
 [ext_resource type="Texture2D" uid="uid://dubqad4bps5gv" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Green/Default_Movement_0006.png" id="50_mcyh3"]
+[ext_resource type="Texture2D" uid="uid://cevgswtwwtg3y" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Attack/Blue_Tentacle_Attack_0008.png" id="50_mi5vx"]
 [ext_resource type="Texture2D" uid="uid://dx6junhrskx7q" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Tentacles_0017.png" id="50_ryxmo"]
 [ext_resource type="Texture2D" uid="uid://b38oinmajp2v3" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Green/Default_Movement_0007.png" id="51_frduw"]
 [ext_resource type="Texture2D" uid="uid://cj8fp5du6aov3" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Tentacles_0018.png" id="51_h7g3a"]
 [ext_resource type="Texture2D" uid="uid://xhi7bc7051cc" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0013.png" id="51_khc48"]
+[ext_resource type="Texture2D" uid="uid://cgo2lyo6pokud" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Attack/Blue_Tentacle_Attack_0007.png" id="51_v2rvf"]
 [ext_resource type="Texture2D" uid="uid://dug6vpquqyhx0" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Green/Default_Movement_0009.png" id="52_8nvw4"]
 [ext_resource type="Texture2D" uid="uid://rt6oosnfb2e2" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0014.png" id="52_bm1b1"]
 [ext_resource type="Texture2D" uid="uid://ho28bk26kk78" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Tentacles_0019.png" id="52_flvto"]
+[ext_resource type="Texture2D" uid="uid://1c7vwngplkxx" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Attack/Blue_Tentacle_Attack_0006.png" id="52_ho0pm"]
 [ext_resource type="Texture2D" uid="uid://6ddsgq2td0n6" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Tentacles_0020.png" id="53_bh5jk"]
 [ext_resource type="Texture2D" uid="uid://cpp5m7qbpugne" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0015.png" id="53_md022"]
+[ext_resource type="Texture2D" uid="uid://da7eqn62egb5l" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Attack/Blue_Tentacle_Attack_0005.png" id="53_qfcq0"]
 [ext_resource type="Texture2D" uid="uid://cmdhku2fpc4a5" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Green/Default_Movement_0010.png" id="53_rtt5h"]
+[ext_resource type="Texture2D" uid="uid://d0atyeqfi2x64" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Attack/Blue_Tentacle_Attack_0004.png" id="54_3tahp"]
 [ext_resource type="Texture2D" uid="uid://dtcu602gooywr" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0016.png" id="54_foy01"]
 [ext_resource type="Texture2D" uid="uid://da8actyyhhbqu" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Tentacles_0021.png" id="54_mt0es"]
 [ext_resource type="Texture2D" uid="uid://htbng5vs83e8" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Green/Default_Movement_0011.png" id="54_q8lsm"]
 [ext_resource type="Texture2D" uid="uid://dy2qp7dojtvum" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Green/Default_Movement_0012.png" id="55_6jv84"]
+[ext_resource type="Texture2D" uid="uid://ce4dluqf5b34c" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Attack/Blue_Tentacle_Attack_0003.png" id="55_8kkbb"]
 [ext_resource type="Texture2D" uid="uid://dnmujmov1kb5x" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Tentacles_0001.png" id="55_kr7am"]
 [ext_resource type="Texture2D" uid="uid://jnaxloqhngvs" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0017.png" id="55_xsemx"]
 [ext_resource type="Texture2D" uid="uid://dwh2u27qxqycd" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Tentacles_0002.png" id="56_4g5xe"]
 [ext_resource type="Texture2D" uid="uid://lskgea5nllpi" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_0009.png" id="56_clpju"]
+[ext_resource type="Texture2D" uid="uid://2yv2q6ecor70" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Attack/Blue_Tentacle_Attack_0002.png" id="56_dtrbx"]
 [ext_resource type="Texture2D" uid="uid://b6ohcsjb3iw8i" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Green/Default_Movement_0013.png" id="56_hw4wc"]
 [ext_resource type="Texture2D" uid="uid://cyf3ynj1j25k1" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Tentacles_0003.png" id="57_0cwtr"]
 [ext_resource type="Texture2D" uid="uid://ojqy3gf6atrg" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Green/Default_Movement_0014.png" id="57_fdqni"]
@@ -137,6 +147,36 @@
 [ext_resource type="Texture2D" uid="uid://bjw5xaik8efhh" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Tentacles_0008.png" id="62_snnw8"]
 [ext_resource type="Texture2D" uid="uid://jug8ox4vxka1" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Tentacles_0009.png" id="63_wnlxb"]
 [ext_resource type="Texture2D" uid="uid://bhcqx2bcdvt4u" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Tentacles_0010.png" id="64_25k3x"]
+[ext_resource type="PackedScene" uid="uid://b745i2v1ya776" path="res://Space_bits/Scenes/Enemy/Boss/Boss_02/Boss_attacks/Blue_Attack/blue_attack_raycast.tscn" id="65_yrktt"]
+[ext_resource type="Texture2D" uid="uid://dt8k1lxadklfg" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Attack/Trail/Blue_tentacle_Trail.png" id="77_mpw2i"]
+[ext_resource type="Texture2D" uid="uid://ci6qcdpbojrql" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Tentacle_anim/green_attack_anim_redone_0008.png" id="78_5gysm"]
+[ext_resource type="Texture2D" uid="uid://cbgwx54lrxsjb" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_BLUE_Attack/Blue_Attack/Trail/Blue_tentacle_Trail_Left.png" id="78_77msb"]
+[ext_resource type="Texture2D" uid="uid://3vdgdl0o3bki" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Tentacle_anim/green_attack_anim_redone_0009.png" id="79_r8ai8"]
+[ext_resource type="Texture2D" uid="uid://cskylweluyvf8" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Tentacle_anim/green_attack_anim_redone_0010.png" id="80_jbamk"]
+[ext_resource type="Texture2D" uid="uid://dkhg7vgqibgir" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0009.png" id="81_hvc43"]
+[ext_resource type="Texture2D" uid="uid://diny7j24a2tvf" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Tentacle_anim/green_attack_anim_redone_0011.png" id="81_rnyv2"]
+[ext_resource type="Texture2D" uid="uid://ds2277rlw7q1l" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Tentacle_anim/green_attack_anim_redone_0012.png" id="82_7fijs"]
+[ext_resource type="Texture2D" uid="uid://dyevyy3w8m0tf" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0010.png" id="82_8r2ey"]
+[ext_resource type="Texture2D" uid="uid://vy1flhahf56d" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0011.png" id="83_1eds2"]
+[ext_resource type="Texture2D" uid="uid://dcaceqtnqw42v" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Tentacle_anim/green_attack_anim_redone_0013.png" id="83_jnq6i"]
+[ext_resource type="Texture2D" uid="uid://dmmlcbe082iiv" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Tentacle_anim/green_attack_anim_redone_0001.png" id="84_aqnwm"]
+[ext_resource type="Texture2D" uid="uid://dieqdiyswba23" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0012.png" id="84_tdpkq"]
+[ext_resource type="Texture2D" uid="uid://ccofwyburj757" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0013.png" id="85_n7ws3"]
+[ext_resource type="Texture2D" uid="uid://cg64rv04ahp1d" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Tentacle_anim/green_attack_anim_redone_0002.png" id="85_po2rc"]
+[ext_resource type="Texture2D" uid="uid://cp5yamw0fbj8v" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Tentacle_anim/green_attack_anim_redone_0003.png" id="86_dyww3"]
+[ext_resource type="Texture2D" uid="uid://b28mdr8ca2ooe" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0014.png" id="86_ib2s5"]
+[ext_resource type="Texture2D" uid="uid://bibnedq8f4cpb" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0015.png" id="87_7xfwk"]
+[ext_resource type="Texture2D" uid="uid://etpqjiuyfn" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Tentacle_anim/green_attack_anim_redone_0004.png" id="87_xo14f"]
+[ext_resource type="Texture2D" uid="uid://bjsb80hm3462c" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0001.png" id="88_kt1ni"]
+[ext_resource type="Texture2D" uid="uid://c53yjp6xlmtqg" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Tentacle_anim/green_attack_anim_redone_0005.png" id="88_pbxvt"]
+[ext_resource type="Texture2D" uid="uid://cob8osuar8fxj" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Tentacle_anim/green_attack_anim_redone_0006.png" id="89_q0h4o"]
+[ext_resource type="Texture2D" uid="uid://d2kw574ljugo5" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0002.png" id="89_r280x"]
+[ext_resource type="Texture2D" uid="uid://dfd0me56anm2k" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_GREEN_Attack/Tentacle_anim/green_attack_anim_redone_0007.png" id="90_4xhbm"]
+[ext_resource type="Texture2D" uid="uid://bnh6kwk7eqtne" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0003.png" id="90_stdrs"]
+[ext_resource type="Texture2D" uid="uid://dmw54hsd3aiu2" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0004.png" id="91_c5hio"]
+[ext_resource type="Texture2D" uid="uid://cvdpr4weg138w" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0005.png" id="92_s0wg6"]
+[ext_resource type="Texture2D" uid="uid://ddwwhsujiy82c" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0006.png" id="93_0hl4k"]
+[ext_resource type="Texture2D" uid="uid://jnigg0wlfm40" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0007.png" id="94_qga83"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x100a"]
 animations = [{
@@ -304,6 +344,34 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="Animation" id="Animation_pvy5k"]
+resource_name = "Attack-BLUE"
+length = 1.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BlueTentacle:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Attack"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BlueTentacle:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+}
+
 [sub_resource type="Animation" id="Animation_j1hdo"]
 resource_name = "AttackFinish-RED"
 length = 0.6
@@ -356,6 +424,62 @@ tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+
+[sub_resource type="Animation" id="Animation_ooqgr"]
+resource_name = "In-to-Out-BLUE"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BlueTentacle:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"In-to-Out"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BlueTentacle:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_oegxa"]
+resource_name = "In-to-Out-Background"
+length = 1.4
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BackGroundTentacles:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"In-to-Out-Background"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BackGroundTentacles:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [0, 1, 2, 3, 4, 5, 6]
@@ -417,6 +541,62 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_50hhi"]
+resource_name = "Out-to-In-BLUE"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BlueTentacle:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Out-to-In"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BlueTentacle:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_gd48d"]
+resource_name = "Out-to-In-Background"
+length = 1.4
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BackGroundTentacles:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Out-to-In-Background"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BackGroundTentacles:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
 }
 
 [sub_resource type="Animation" id="Animation_332yt"]
@@ -493,6 +673,30 @@ tracks/5/keys = {
 "update": 1,
 "values": [0]
 }
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("BackGroundTentacles:animation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Out-to-In-Background"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("BackGroundTentacles:frame")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
 
 [sub_resource type="Animation" id="Animation_4u6p0"]
 resource_name = "Right-to-Left-GREEN"
@@ -552,68 +756,76 @@ tracks/1/keys = {
 "values": [0, 1, 2, 3, 4, 5, 6, 1]
 }
 
-[sub_resource type="Animation" id="Animation_50hhi"]
-resource_name = "Out-to-In-BLUE"
+[sub_resource type="Animation" id="Animation_s1dy0"]
+resource_name = "AttackStart-GREEN"
+length = 1.8
+step = 0.25
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("BlueTentacle:animation")
+tracks/0/path = NodePath("GreenTentacle:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"Out-to-In"]
+"values": [&"AttackStart-GREEN"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("BlueTentacle:frame")
+tracks/1/path = NodePath("GreenTentacle:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1, 1.25, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+"values": [0, 1, 2, 3, 4, 5, 6]
 }
 
-[sub_resource type="Animation" id="Animation_ooqgr"]
-resource_name = "In-to-Out-BLUE"
+[sub_resource type="Animation" id="Animation_jcioq"]
+resource_name = "AttackFinish-GREEN"
+step = 0.175
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("BlueTentacle:animation")
+tracks/0/path = NodePath("GreenTentacle:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"In-to-Out"]
+"values": [&"AttackFinish-GREEN"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("BlueTentacle:frame")
+tracks/1/path = NodePath("GreenTentacle:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.175, 0.35, 0.525, 0.7, 0.875),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+"values": [0, 1, 2, 3, 4, 5]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ok775"]
 _data = {
+"Attack-BLUE": SubResource("Animation_pvy5k"),
+"AttackFinish-GREEN": SubResource("Animation_jcioq"),
 "AttackFinish-RED": SubResource("Animation_j1hdo"),
+"AttackStart-GREEN": SubResource("Animation_s1dy0"),
 "AttackStart-RED": SubResource("Animation_2s2nk"),
 "In-to-Out-BLUE": SubResource("Animation_ooqgr"),
+"In-to-Out-Background": SubResource("Animation_oegxa"),
 "Left-to-Right-GREEN": SubResource("Animation_itnhw"),
 "Left-to-Right-RED": SubResource("Animation_2w7yg"),
 "Out-to-In-BLUE": SubResource("Animation_50hhi"),
+"Out-to-In-Background": SubResource("Animation_gd48d"),
 "RESET": SubResource("Animation_332yt"),
 "Right-to-Left-GREEN": SubResource("Animation_4u6p0"),
 "Right-to-Left-RED": SubResource("Animation_ybcyc")
@@ -681,7 +893,7 @@ states/AttackFinish-RED/node = SubResource("AnimationNodeBlendSpace2D_xu8lw")
 states/AttackFinish-RED/position = Vector2(660, 109)
 states/AttackStart-RED/node = SubResource("AnimationNodeBlendSpace2D_pc7s0")
 states/AttackStart-RED/position = Vector2(411, 109)
-states/End/position = Vector2(961, 202)
+states/End/position = Vector2(903, 202)
 states/Left-to-Right-RED/node = SubResource("AnimationNodeBlendSpace2D_4oqme")
 states/Left-to-Right-RED/position = Vector2(526, 202)
 "states/Right-to-Left-RED 2/node" = SubResource("AnimationNodeAnimation_kxdhh")
@@ -707,6 +919,47 @@ colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 0.294118, 0, 0, 1, 0, 0, 0, 0)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_p4645"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("46_ll46f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_31fbg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_j4cj2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_edcse")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_mi5vx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_v2rvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_ho0pm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_qfcq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_3tahp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_8kkbb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_dtrbx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_dtrbx")
+}],
+"loop": true,
+"name": &"Attack",
+"speed": 1.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("45_pmilc")
@@ -778,6 +1031,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_aoxko"]
+animation = &"Attack-BLUE"
+
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_iaf53"]
 animation = &"In-to-Out-BLUE"
 
@@ -794,16 +1050,82 @@ advance_mode = 2
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_phmv0"]
 switch_mode = 2
 advance_mode = 2
+advance_condition = &"is_idle_blue"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_3tc5l"]
+switch_mode = 2
+advance_mode = 2
+advance_condition = &"is_attack_blue"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_arw53"]
+switch_mode = 2
+advance_mode = 2
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_32phs"]
+states/Attack-BLUE/node = SubResource("AnimationNodeAnimation_aoxko")
+states/Attack-BLUE/position = Vector2(653, -2)
 states/In-to-Out-BLUE/node = SubResource("AnimationNodeAnimation_iaf53")
 states/In-to-Out-BLUE/position = Vector2(653, 100)
 states/Out-to-In-BLUE/node = SubResource("AnimationNodeAnimation_0wlw8")
 states/Out-to-In-BLUE/position = Vector2(414, 100)
-transitions = ["Start", "Out-to-In-BLUE", SubResource("AnimationNodeStateMachineTransition_4xw6m"), "Out-to-In-BLUE", "In-to-Out-BLUE", SubResource("AnimationNodeStateMachineTransition_xycs5"), "In-to-Out-BLUE", "Out-to-In-BLUE", SubResource("AnimationNodeStateMachineTransition_phmv0")]
+transitions = ["Start", "Out-to-In-BLUE", SubResource("AnimationNodeStateMachineTransition_4xw6m"), "Out-to-In-BLUE", "In-to-Out-BLUE", SubResource("AnimationNodeStateMachineTransition_xycs5"), "In-to-Out-BLUE", "Out-to-In-BLUE", SubResource("AnimationNodeStateMachineTransition_phmv0"), "In-to-Out-BLUE", "Attack-BLUE", SubResource("AnimationNodeStateMachineTransition_3tc5l"), "Attack-BLUE", "In-to-Out-BLUE", SubResource("AnimationNodeStateMachineTransition_arw53")]
+graph_offset = Vector2(-74, -59)
+
+[sub_resource type="Gradient" id="Gradient_5p3a0"]
+offsets = PackedFloat32Array(0, 0.438298, 0.889362)
+colors = PackedColorArray(0.486275, 1, 1, 0.529412, 0, 1, 1, 0.792157, 1, 1, 1, 0)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_t0asq"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("78_5gysm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_r8ai8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_jbamk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_rnyv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_7fijs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_jnq6i")
+}],
+"loop": true,
+"name": &"AttackFinish-GREEN",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("84_aqnwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_po2rc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_dyww3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_xo14f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_pbxvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_q0h4o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_4xhbm")
+}],
+"loop": false,
+"name": &"AttackStart-GREEN",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("45_00xpl")
@@ -863,6 +1185,12 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_81evv"]
+animation = &"AttackFinish-GREEN"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_kf1yg"]
+animation = &"AttackStart-GREEN"
+
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_r8gsh"]
 animation = &"Left-to-Right-GREEN"
 
@@ -886,7 +1214,24 @@ switch_mode = 2
 advance_mode = 2
 advance_condition = &"is_idle_green"
 
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ao8tm"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_7juq7"]
+switch_mode = 2
+advance_mode = 2
+advance_condition = &"is_attack_green"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_mir6e"]
+switch_mode = 2
+advance_mode = 2
+
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_kwbji"]
+states/AttackFinish-GREEN/node = SubResource("AnimationNodeAnimation_81evv")
+states/AttackFinish-GREEN/position = Vector2(514, 26)
+states/AttackStart-GREEN/node = SubResource("AnimationNodeAnimation_kf1yg")
+states/AttackStart-GREEN/position = Vector2(802, 26)
 states/End/position = Vector2(1059, 113)
 states/Left-to-Right-GREEN/node = SubResource("AnimationNodeAnimation_r8gsh")
 states/Left-to-Right-GREEN/position = Vector2(514, 113)
@@ -895,7 +1240,87 @@ states/Right-to-Left-GREEN/position = Vector2(802, 113)
 states/Start/position = Vector2(100, 113)
 states/is_alive/node = SubResource("AnimationNodeStateMachine_kd8kc")
 states/is_alive/position = Vector2(283, 113)
-transitions = ["Start", "is_alive", SubResource("AnimationNodeStateMachineTransition_iw7xj"), "is_alive", "Left-to-Right-GREEN", SubResource("AnimationNodeStateMachineTransition_ma2x0"), "Left-to-Right-GREEN", "Right-to-Left-GREEN", SubResource("AnimationNodeStateMachineTransition_kbbp7"), "Right-to-Left-GREEN", "Left-to-Right-GREEN", SubResource("AnimationNodeStateMachineTransition_u8717")]
+transitions = ["Start", "is_alive", SubResource("AnimationNodeStateMachineTransition_iw7xj"), "is_alive", "Left-to-Right-GREEN", SubResource("AnimationNodeStateMachineTransition_ma2x0"), "Left-to-Right-GREEN", "Right-to-Left-GREEN", SubResource("AnimationNodeStateMachineTransition_kbbp7"), "Right-to-Left-GREEN", "Left-to-Right-GREEN", SubResource("AnimationNodeStateMachineTransition_u8717"), "AttackStart-GREEN", "AttackFinish-GREEN", SubResource("AnimationNodeStateMachineTransition_ao8tm"), "Right-to-Left-GREEN", "AttackStart-GREEN", SubResource("AnimationNodeStateMachineTransition_7juq7"), "AttackFinish-GREEN", "Left-to-Right-GREEN", SubResource("AnimationNodeStateMachineTransition_mir6e")]
+graph_offset = Vector2(51, -16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o82rn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("81_hvc43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_8r2ey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_1eds2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_tdpkq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_n7ws3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_ib2s5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_7xfwk")
+}],
+"loop": true,
+"name": &"In-to-Out-Background",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("88_kt1ni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_r280x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_stdrs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_c5hio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_s0wg6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_0hl4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_qga83")
+}],
+"loop": true,
+"name": &"Out-to-In-Background",
+"speed": 5.0
+}]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_v05i4"]
+animation = &"In-to-Out-Background"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_k6d33"]
+animation = &"Out-to-In-Background"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_idc5s"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_uraoh"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_vyl10"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_cgqvf"]
+states/In-to-Out-Background/node = SubResource("AnimationNodeAnimation_v05i4")
+states/In-to-Out-Background/position = Vector2(422, 100)
+states/Out-to-In-Background/node = SubResource("AnimationNodeAnimation_k6d33")
+states/Out-to-In-Background/position = Vector2(673, 100)
+transitions = ["Start", "In-to-Out-Background", SubResource("AnimationNodeStateMachineTransition_idc5s"), "In-to-Out-Background", "Out-to-In-Background", SubResource("AnimationNodeStateMachineTransition_uraoh"), "Out-to-In-Background", "In-to-Out-Background", SubResource("AnimationNodeStateMachineTransition_vyl10")]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ki4ag"]
 animations = [{
@@ -1114,8 +1539,21 @@ collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource("1_qwt3t")
 
-[node name="DeathBeam2D" parent="." instance=ExtResource("2_pyexw")]
-position = Vector2(4.35262e-13, -2.56114e-09)
+[node name="BlueTentacleAttack" type="Node2D" parent="."]
+
+[node name="MarkerRight" type="Marker2D" parent="BlueTentacleAttack"]
+position = Vector2(165.024, -143.973)
+rotation = -1.5708
+
+[node name="BlueAttackRight" parent="BlueTentacleAttack/MarkerRight" instance=ExtResource("65_yrktt")]
+position = Vector2(-7.62939e-06, -1.26932e-09)
+
+[node name="MarkerLeft" type="Marker2D" parent="BlueTentacleAttack"]
+position = Vector2(165, 144)
+rotation = 1.5708
+
+[node name="BlueAttackLeft" parent="BlueTentacleAttack/MarkerLeft" instance=ExtResource("65_yrktt")]
+position = Vector2(-1.80565e-05, 0)
 
 [node name="AnimatedSpriteBody" type="AnimatedSprite2D" parent="."]
 z_index = 2
@@ -1129,7 +1567,7 @@ animation = &"AttackGreen"
 position = Vector2(39.1683, -9.82681)
 
 [node name="GreenMarker2D" type="Marker2D" parent="AnimatedSpriteBody"]
-position = Vector2(27.994, 36.0047)
+position = Vector2(28.9976, 14.1715)
 
 [node name="RedTentacle" type="AnimatedSprite2D" parent="AnimatedSpriteBody"]
 z_index = 1
@@ -1145,7 +1583,7 @@ libraries = {
 tree_root = SubResource("AnimationNodeStateMachine_68ncm")
 anim_player = NodePath("../../AnimationPlayer")
 parameters/conditions/is_attack_red = false
-parameters/conditions/is_idle_red = false
+parameters/conditions/is_idle_red = true
 parameters/AttackFinish-RED/blend_position = Vector2(0, 0)
 parameters/AttackStart-RED/blend_position = Vector2(0, 0)
 parameters/Left-to-Right-RED/blend_position = Vector2(0, 0)
@@ -1185,13 +1623,43 @@ position = Vector2(28, 0.00465851)
 sprite_frames = SubResource("SpriteFrames_p4645")
 animation = &"Out-to-In"
 
-[node name="AnimationTree" type="AnimationTree" parent="AnimatedSpriteBody/BlueTentacle"]
+[node name="AnimationTreeBLUE" type="AnimationTree" parent="AnimatedSpriteBody/BlueTentacle"]
 root_node = NodePath("../..")
 libraries = {
 "": SubResource("AnimationLibrary_ok775")
 }
 tree_root = SubResource("AnimationNodeStateMachine_32phs")
 anim_player = NodePath("../../AnimationPlayer")
+parameters/conditions/is_attack_blue = false
+parameters/conditions/is_idle_blue = true
+
+[node name="CPUParticlesTrailRight" type="CPUParticles2D" parent="AnimatedSpriteBody/BlueTentacle"]
+z_index = -1
+position = Vector2(6.50313, -18.8323)
+emitting = false
+amount = 3
+lifetime = 0.3
+one_shot = true
+texture = ExtResource("77_mpw2i")
+gravity = Vector2(0, 0)
+angle_min = 160.0
+angle_max = 160.0
+color = Color(1, 1, 1, 0.443137)
+color_ramp = SubResource("Gradient_5p3a0")
+
+[node name="CPUParticlesTrailLeft" type="CPUParticles2D" parent="AnimatedSpriteBody/BlueTentacle"]
+z_index = -1
+position = Vector2(6.83017, 19.0011)
+emitting = false
+amount = 3
+lifetime = 0.3
+one_shot = true
+texture = ExtResource("78_77msb")
+gravity = Vector2(0, 0)
+angle_min = -160.0
+angle_max = -160.0
+color = Color(1, 1, 1, 0.443137)
+color_ramp = SubResource("Gradient_5p3a0")
 
 [node name="GreenTentacle" type="AnimatedSprite2D" parent="AnimatedSpriteBody"]
 z_index = 1
@@ -1206,9 +1674,24 @@ libraries = {
 }
 tree_root = SubResource("AnimationNodeStateMachine_kwbji")
 anim_player = NodePath("../../AnimationPlayer")
-parameters/conditions/is_idle_green = false
+parameters/conditions/is_attack_green = false
+parameters/conditions/is_idle_green = true
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="AnimatedSpriteBody/GreenTentacle"]
 
 [node name="BackGroundTentacles" type="AnimatedSprite2D" parent="AnimatedSpriteBody"]
+z_index = -1
+position = Vector2(29.3333, 0.00488034)
+sprite_frames = SubResource("SpriteFrames_o82rn")
+animation = &"Out-to-In-Background"
+
+[node name="AnimationTree" type="AnimationTree" parent="AnimatedSpriteBody/BackGroundTentacles"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_ok775")
+}
+tree_root = SubResource("AnimationNodeStateMachine_cgqvf")
+anim_player = NodePath("../../AnimationPlayer")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSpriteBody"]
 libraries = {
@@ -1290,12 +1773,20 @@ one_shot = true
 [node name="PupilBaseState" type="Timer" parent="AnimatedSpriteEye/PupilCollision"]
 one_shot = true
 
-[node name="TestCollisionDamage" type="CollisionPolygon2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
 visible = false
+
+[node name="TestCollisionDamage" type="CollisionPolygon2D" parent="Area2D"]
+z_index = 2
 position = Vector2(61, 4)
-polygon = PackedVector2Array(186, 168, 188, -182, 1, -185, -176, -144, -182, 119, -79, 173)
+polygon = PackedVector2Array(46.977, 134.018, 40.977, 134.017, 40.975, 146.017, 34.975, 146.016, 34.974, 152.016, 28.974, 152.015, 28.973, 158.015, 22.973, 158.014, 22.972, 164.014, -1.02795, 164.01, -1.02695, 158.01, -13.027, 158.008, -13.026, 152.008, -19.026, 152.007, -19.025, 146.007, -37.025, 146.004, -38.026, 152.004, -50.026, 152.002, -50.027, 158.002, -85.027, 157.996, -85.026, 151.996, -97.026, 151.994, -97.025, 145.994, -109.025, 145.992, -109.024, 139.992, -115.024, 139.991, -115.023, 133.991, -121.023, 133.99, -121.022, 127.99, -127.022, 127.989, -127.021, 121.989, -133.021, 121.988, -133.019, 109.988, -139.019, 109.987, -139.014, 79.987, -145.014, 79.986, -145.012, 67.986, -151.012, 67.985, -151.01, 55.985, -157.01, 55.984, -157.009, 49.984, -163.009, 49.983, -163.006, 31.983, -169.006, 31.982, -169.004, 19.982, -175.004, 19.981, -174.996, -28.019, -168.996, -28.018, -168.994, -40.018, -162.994, -40.017, -162.991, -58.017, -156.991, -58.016, -156.99, -64.016, -150.99, -64.015, -150.988, -76.015, -144.988, -76.014, -144.986, -88.014, -138.986, -88.013, -138.981, -118.013, -132.981, -118.012, -132.979, -130.012, -126.979, -130.011, -126.978, -136.011, -120.978, -136.01, -121.977, -142.01, -114.977, -142.009, -114.976, -148.009, -108.976, -148.008, -108.975, -154.008, -96.975, -154.006, -96.974, -160.006, -84.974, -160.004, -84.973, -166.004, -48.973, -165.998, -48.974, -159.998, -36.974, -159.996, -36.975, -153.996, -18.975, -153.993, -18.974, -159.993, -12.974, -159.992, -12.973, -165.992, -0.973049, -165.99, -0.97205, -171.99, 23.028, -171.986, 23.027, -165.986, 29.027, -165.985, 29.026, -159.985, 35.026, -159.984, 35.025, -153.984, 41.025, -153.983, 41.023, -141.983, 47.023, -141.982, 47.014, -87.982, 41.014, -87.983, 41.013, -81.983, 35.013, -81.984, 35.01, -63.984, 29.01, -63.985, 29.008, -51.985, 23.008, -51.986, 23.006, -39.986, 17.006, -39.987, 17.002, -15.987, 11.002, -15.988, 10.998, 8.01198, 16.998, 8.01298, 16.995, 26.013, 22.995, 26.014, 22.992, 44.014, 28.992, 44.015, 28.99, 56.015, 34.99, 56.016, 34.987, 74.016, 40.987, 74.017, 40.986, 80.017, 45.986, 80.0178)
 
 [connection signal="animation_finished" from="AnimatedSpriteBody/RedTentacle/AnimationTreeRED" to="." method="_on_animation_tree_red_animation_finished"]
+[connection signal="frame_changed" from="AnimatedSpriteBody/BlueTentacle" to="." method="_on_blue_tentacle_frame_changed"]
+[connection signal="animation_finished" from="AnimatedSpriteBody/BlueTentacle/AnimationTreeBLUE" to="." method="_on_animation_tree_blue_animation_finished"]
+[connection signal="animation_started" from="AnimatedSpriteBody/BlueTentacle/AnimationTreeBLUE" to="." method="_on_animation_tree_blue_animation_started"]
+[connection signal="animation_finished" from="AnimatedSpriteBody/GreenTentacle/AnimationTreeGREEN" to="." method="_on_animation_tree_green_animation_finished"]
+[connection signal="animation_started" from="AnimatedSpriteBody/GreenTentacle/AnimationTreeGREEN" to="." method="_on_animation_tree_green_animation_started"]
 [connection signal="animation_finished" from="AnimatedSpriteEye/AnimatedSpriteEyelid" to="." method="_on_animated_sprite_eyelid_animation_finished"]
 [connection signal="timeout" from="AnimatedSpriteEye/AnimatedSpriteEyelid/EyelidAnimTimer" to="." method="_on_eyelid_anim_timer_timeout"]
 [connection signal="animation_finished" from="AnimatedSpriteEye/PupilCollision/AnimatedSpritePupil" to="AnimatedSpriteEye/PupilCollision" method="_on_animated_sprite_pupil_animation_finished"]
@@ -1304,3 +1795,4 @@ polygon = PackedVector2Array(186, 168, 188, -182, 1, -185, -176, -144, -182, 119
 [connection signal="timeout" from="AnimatedSpriteEye/PupilCollision/DeathBeamFiring" to="AnimatedSpriteEye/PupilCollision" method="_on_death_beam_firing_timeout"]
 [connection signal="timeout" from="AnimatedSpriteEye/PupilCollision/BeamCoolingDown" to="AnimatedSpriteEye/PupilCollision" method="_on_beam_cooling_down_timeout"]
 [connection signal="timeout" from="AnimatedSpriteEye/PupilCollision/PupilBaseState" to="AnimatedSpriteEye/PupilCollision" method="_on_pupil_base_state_timeout"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
