@@ -1,4 +1,4 @@
-[gd_scene load_steps=250 format=3 uid="uid://b4pju4xxh8jpg"]
+[gd_scene load_steps=254 format=3 uid="uid://b4pju4xxh8jpg"]
 
 [ext_resource type="Script" path="res://Space_bits/Scripts/Enemies/Bosses/Boss_02/boss_02.gd" id="1_qwt3t"]
 [ext_resource type="Texture2D" uid="uid://b0yurrpj0e6ye" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Eye/Boss_02_Eye_Test.png" id="2_pytet"]
@@ -177,6 +177,7 @@
 [ext_resource type="Texture2D" uid="uid://cvdpr4weg138w" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0005.png" id="92_s0wg6"]
 [ext_resource type="Texture2D" uid="uid://ddwwhsujiy82c" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0006.png" id="93_0hl4k"]
 [ext_resource type="Texture2D" uid="uid://jnigg0wlfm40" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Body/Tentacles/Animated_Background/Background_Tentacles_0007.png" id="94_qga83"]
+[ext_resource type="Texture2D" uid="uid://ctj1o216ykhtk" path="res://Space_bits/Sprites/Enemies/Boss_02/Boss_02_Pupil/Boss_02_Pupil_Test_Trail.png" id="107_ltv7n"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x100a"]
 animations = [{
@@ -372,6 +373,34 @@ tracks/1/keys = {
 "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 }
 
+[sub_resource type="Animation" id="Animation_jcioq"]
+resource_name = "AttackFinish-GREEN"
+step = 0.175
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GreenTentacle:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"AttackFinish-GREEN"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GreenTentacle:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.175, 0.35, 0.525, 0.7, 0.875),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+
 [sub_resource type="Animation" id="Animation_j1hdo"]
 resource_name = "AttackFinish-RED"
 length = 0.6
@@ -401,9 +430,38 @@ tracks/1/keys = {
 "values": [0, 1, 2, 3, 4, 5, 6]
 }
 
+[sub_resource type="Animation" id="Animation_s1dy0"]
+resource_name = "AttackStart-GREEN"
+length = 1.8
+step = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GreenTentacle:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"AttackStart-GREEN"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GreenTentacle:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1, 1.25, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+
 [sub_resource type="Animation" id="Animation_2s2nk"]
 resource_name = "AttackStart-RED"
-length = 0.78
+length = 0.8
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -754,63 +812,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [0, 1, 2, 3, 4, 5, 6, 1]
-}
-
-[sub_resource type="Animation" id="Animation_s1dy0"]
-resource_name = "AttackStart-GREEN"
-length = 1.8
-step = 0.25
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("GreenTentacle:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"AttackStart-GREEN"]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("GreenTentacle:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1, 1.25, 1.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4, 5, 6]
-}
-
-[sub_resource type="Animation" id="Animation_jcioq"]
-resource_name = "AttackFinish-GREEN"
-step = 0.175
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("GreenTentacle:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"AttackFinish-GREEN"]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("GreenTentacle:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.175, 0.35, 0.525, 0.7, 0.875),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4, 5]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ok775"]
@@ -1243,6 +1244,17 @@ states/is_alive/position = Vector2(283, 113)
 transitions = ["Start", "is_alive", SubResource("AnimationNodeStateMachineTransition_iw7xj"), "is_alive", "Left-to-Right-GREEN", SubResource("AnimationNodeStateMachineTransition_ma2x0"), "Left-to-Right-GREEN", "Right-to-Left-GREEN", SubResource("AnimationNodeStateMachineTransition_kbbp7"), "Right-to-Left-GREEN", "Left-to-Right-GREEN", SubResource("AnimationNodeStateMachineTransition_u8717"), "AttackStart-GREEN", "AttackFinish-GREEN", SubResource("AnimationNodeStateMachineTransition_ao8tm"), "Right-to-Left-GREEN", "AttackStart-GREEN", SubResource("AnimationNodeStateMachineTransition_7juq7"), "AttackFinish-GREEN", "Left-to-Right-GREEN", SubResource("AnimationNodeStateMachineTransition_mir6e")]
 graph_offset = Vector2(51, -16)
 
+[sub_resource type="Curve" id="Curve_5d2wv"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_k3tic"]
+offsets = PackedFloat32Array(0, 0.46383, 1)
+colors = PackedColorArray(0, 1, 0, 1, 0, 0.509804, 0, 1, 0, 0.509804, 0, 0)
+
+[sub_resource type="Gradient" id="Gradient_pibnd"]
+colors = PackedColorArray(0.00392157, 1, 0, 1, 1, 1, 1, 0)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_o82rn"]
 animations = [{
 "frames": [{
@@ -1567,7 +1579,7 @@ animation = &"AttackGreen"
 position = Vector2(39.1683, -9.82681)
 
 [node name="GreenMarker2D" type="Marker2D" parent="AnimatedSpriteBody"]
-position = Vector2(28.9976, 14.1715)
+position = Vector2(28.164, 15.838)
 
 [node name="RedTentacle" type="AnimatedSprite2D" parent="AnimatedSpriteBody"]
 z_index = 1
@@ -1677,7 +1689,31 @@ anim_player = NodePath("../../AnimationPlayer")
 parameters/conditions/is_attack_green = false
 parameters/conditions/is_idle_green = true
 
-[node name="CPUParticles2D" type="CPUParticles2D" parent="AnimatedSpriteBody/GreenTentacle"]
+[node name="OrbPulse" type="CPUParticles2D" parent="AnimatedSpriteBody/GreenTentacle"]
+position = Vector2(-1.16657, -0.666881)
+emitting = false
+amount = 6
+lifetime = 0.8
+texture = ExtResource("107_ltv7n")
+gravity = Vector2(0, 0)
+scale_amount_min = 6.0
+scale_amount_max = 6.0
+scale_amount_curve = SubResource("Curve_5d2wv")
+color_ramp = SubResource("Gradient_k3tic")
+
+[node name="AbsorbParticles" type="CPUParticles2D" parent="AnimatedSpriteBody/GreenTentacle"]
+position = Vector2(-1.16657, -0.666881)
+emitting = false
+amount = 48
+emission_shape = 2
+emission_sphere_radius = 6.0
+gravity = Vector2(0, 0)
+radial_accel_min = -30.0
+radial_accel_max = -5.0
+angle_max = 180.0
+scale_amount_min = 1.5
+scale_amount_max = 2.0
+color_ramp = SubResource("Gradient_pibnd")
 
 [node name="BackGroundTentacles" type="AnimatedSprite2D" parent="AnimatedSpriteBody"]
 z_index = -1
