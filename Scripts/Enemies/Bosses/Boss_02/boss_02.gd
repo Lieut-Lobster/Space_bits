@@ -24,7 +24,8 @@ const RedAttackScene = preload("res://Space_bits/Scenes/Enemy/Boss/Boss_02/Boss_
 const GreenAttackScene = preload("res://Space_bits/Scenes/Enemy/Boss/Boss_02/Boss_attacks/Green_Attack/green_attack.tscn")
 @onready var GreenAttackMarker = $AnimatedSpriteBody/GreenMarker2D
 @onready var GreenTentacleAnim = $AnimatedSpriteBody/GreenTentacle
-
+@onready var GreenTentacleOrbPulse = $AnimatedSpriteBody/GreenTentacle/OrbPulse
+@onready var GreenTentacleAbsorbParticles = $AnimatedSpriteBody/GreenTentacle/AbsorbParticles
 @onready var EyeLidAnimated2D = $AnimatedSpriteEye/AnimatedSpriteEyelid
 @onready var EyeLidAnimTimer = $AnimatedSpriteEye/AnimatedSpriteEyelid/EyelidAnimTimer
 var eyelid_anim_time := randi_range(2, 4)
@@ -98,7 +99,7 @@ func _process(_delta):
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
-	boss_static_movement(delta, is_boss_moving, 0.6, 0.15)
+	boss_static_movement(delta, is_boss_moving, 1.0, 0.3)
 	
 	
 
@@ -111,11 +112,21 @@ func boss_static_movement(delta : float, is_moving : bool, adjust_x_speed : floa
 		if position.x <= 180.0:
 			movement_speed_x += adjust_x_speed * (delta * 2.5)
 		if position.y >= 140:
-			movement_speed_y -= adjust_y_speed * (delta * 2.5)
+			movement_speed_y -= adjust_y_speed * (delta)
 		if position.y <= 110:
-			movement_speed_y += adjust_y_speed * (delta * 2.5)
+			movement_speed_y += adjust_y_speed * (delta)
 		position += Vector2(movement_speed_x, movement_speed_y)
 	else:
+		if movement_speed_x > 0:
+			movement_speed_x = 0.6
+		else:
+			movement_speed_x = -0.6
+		
+		if movement_speed_y > 0:
+			movement_speed_y = 0.2
+		else:
+			movement_speed_y = -0.2
+		
 		# This should only occur when BLUE Attack is chosen
 		position += Vector2((screen_size_x/2) - position.x, 100 - position.y) * (delta * 2.5)
 		if position > Vector2((screen_size_x/2) - 10, 90) && position < Vector2((screen_size_x/2) + 10, 110):
@@ -133,13 +144,13 @@ func boss_attack_weighting():
 			print("Attack Weighting Complete!")
 			boss_attack_randomly_chosen()
 		elif Player.player_pos.x >= screen_size_x * 0.6:
-			attack_weighting_red += 0.003
+			attack_weighting_red += 0.004
 			body_animation_index = 1
 		elif Player.player_pos.x <= screen_size_x * 0.6 && Player.player_pos.x >= screen_size_x * 0.4:
-			attack_weighting_blue += 0.003
+			attack_weighting_blue += 0.004
 			body_animation_index = 2
 		elif Player.player_pos.x <= screen_size_x * 0.4:
-			attack_weighting_green += 0.003
+			attack_weighting_green += 0.004
 			body_animation_index = 3
 	BodyAnimated2D.play(body_animation_array[body_animation_index])
 
@@ -160,6 +171,7 @@ func boss_attack_randomly_chosen():
 	if !attack_dictionary.is_empty():
 		attack_dictionary.merge(base_attack_chances_dictionary)
 		random_attack_select = random.randi_range(1, attack_dictionary.size())
+		print(attack_dictionary)
 		play_attack_chosen(attack_dictionary[random_attack_select])
 	else:
 		print("There was an error, attack_dictionary was never populated. This should never happen.")
@@ -271,8 +283,16 @@ func _on_blue_tentacle_frame_changed():
 # END ---- BLUE ANIMATION / MECHANICS HANDLING ---- END
 
 # START -- GREEN ANIMATION / MECHANICS HANDLING -- START
+func _on_animation_tree_green_animation_started(anim_name):
+	match anim_name:
+		"AttackStart-GREEN":
+			GreenTentacleOrbPulse.emitting = true
+			GreenTentacleAbsorbParticles.emitting = true
+		"AttackFinish-GREEN":
+			GreenTentacleOrbPulse.emitting = false
+			GreenTentacleAbsorbParticles.emitting = false
+
 func _on_animation_tree_green_animation_finished(anim_name):
-	print(anim_name)
 	match anim_name:
 		"AttackStart-GREEN":
 			attack_instantiate_and_position(GreenAttackScene, GreenAttackMarker, "GREEN")

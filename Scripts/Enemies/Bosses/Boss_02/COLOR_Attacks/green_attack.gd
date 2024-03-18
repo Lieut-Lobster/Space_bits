@@ -9,17 +9,16 @@ extends Area2D
 var explosion_ring_scene = preload("res://Space_bits/Scenes/Custom/ring_collision.tscn")
 
 # speed in this case, 1 = normal speed, speed < 1 == slower, speed > 1 == faster
-var speed := 200.0
+var speed := 40.0
 
 var damage := 10
 var enemy_type := "Boss_02 - Green Attack (Pre-Explosion)"
 
 var players_last_position : Vector2
+var attack_angle_to_player : float
 
 var is_saw_blade_shrinking : bool = false
 var has_explosion_ended : bool = false
-
-
 
 var explosion_collider
 
@@ -27,7 +26,8 @@ var explosion_collider
 func _ready():
 	if Player.player_pos != null:
 		players_last_position = Player.player_pos
-	rotate(BossMechanics._attack_angle_to_player)
+		attack_angle_to_player = BossMechanics._attack_angle_to_player
+	rotate(attack_angle_to_player)
 	AnimTree["parameters/conditions/destination_not_reached"] = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -38,17 +38,16 @@ func _physics_process(delta):
 			(position.x < players_last_position.x + 20 && position.x > players_last_position.x - 20)
 		):
 			if speed > 0:
-				speed -= 2
+				speed -= 2.0
 			else:
 				speed = 0
-		elif players_last_position.y + 100 > position.y && players_last_position.y - 100 < position.y:
-			speed *= 0.987
-		elif players_last_position.y + 200 > position.y && players_last_position.y - 200 < position.y:
-			speed *= 0.992
+		#elif players_last_position.y + 100 > position.y && players_last_position.y - 100 < position.y:
+			#speed *= 0.979
+		#elif players_last_position.y + 200 > position.y && players_last_position.y - 200 < position.y:
+			#speed *= 0.989
 		elif players_last_position.y + 300 > position.y && players_last_position.y - 300 < position.y:
 			speed *= 0.999
-		position += Vector2(0, speed).rotated(BossMechanics._attack_angle_to_player - 1.5707963268) * delta
-		
+		position += Vector2(0, speed).rotated(attack_angle_to_player - 1.5707963268) * delta
 	if saw_edges != null:
 		saw_edges.rotation_degrees -= 2
 		if is_saw_blade_shrinking == true:
@@ -56,8 +55,8 @@ func _physics_process(delta):
 			if saw_edges.scale <= Vector2(2.2, 2.2):
 				saw_edges.queue_free()
 	if explosion_collider != null && has_explosion_ended == false:
-		explosion_collider.scale += Vector2(0.022, 0.022)
-		scale += Vector2(0.04, 0.04)
+		explosion_collider.scale += Vector2(0.043, 0.043)
+		scale += Vector2(0.08, 0.08)
 
 func AnimationTreeHandling():
 	if ((position.y < players_last_position.y + 20 && position.y > players_last_position.y - 20) &&
